@@ -587,23 +587,24 @@
   max-width: var(--dl-size-size-maxwidth);
   align-self: center;
   margin-top: var(--dl-space-space-twounits);
-  text-align: left;
+  text-align: center;
   margin-left: var(--dl-space-space-twounits);
   margin-right: var(--dl-space-space-twounits);
   padding-left: var(--dl-space-space-twounits);
   margin-bottom: var(--dl-space-space-twounits);
   padding-right: var(--dl-space-space-twounits);
 }
-.home-button {
+.home-navlink21 {
   color: #ffffff;
   transition: 0.3s;
   padding-top: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-twounits);
   padding-right: var(--dl-space-space-twounits);
   padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
   background-color: #102632;
 }
-.home-button:hover {
+.home-navlink21:hover {
   transform: scale(1.02);
 }
 .home-text22 {

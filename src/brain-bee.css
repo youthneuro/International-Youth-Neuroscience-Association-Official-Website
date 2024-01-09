@@ -584,7 +584,7 @@
   transform: scale(1.02);
 }
 .brain-bee-testimonial {
-  width: 552px;
+  width: auto;
   margin: var(--dl-space-space-twounits);
   display: flex;
   padding: var(--dl-space-space-unit);
@@ -663,7 +663,7 @@
   transform: scale(1.02);
 }
 .brain-bee-testimonial2 {
-  width: 552px;
+  width: auto;
   margin: var(--dl-space-space-twounits);
   display: flex;
   padding: var(--dl-space-space-unit);

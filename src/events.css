@@ -458,12 +458,14 @@
 }
 .events-text11 {
   color: #CAE9FF;
+  text-align: center;
   margin-left: var(--dl-space-space-twounits);
   margin-right: var(--dl-space-space-twounits);
   margin-bottom: var(--dl-space-space-unit);
 }
 .events-gallery {
   width: 100%;
+  margin: var(--dl-space-space-unit);
   display: grid;
   padding: var(--dl-space-space-threeunits);
   grid-gap: var(--dl-space-space-unit);

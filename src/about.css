@@ -465,9 +465,10 @@
 }
 .about-text12 {
   color: #CAE9FF;
+  text-align: center;
   margin-left: var(--dl-space-space-sixunits);
   margin-right: var(--dl-space-space-sixunits);
-  margin-bottom: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-threeunits);
 }
 .about-footer {
   width: 100%;
