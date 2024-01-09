@@ -447,6 +447,8 @@
 .journal-text08 {
   color: rgb(255, 255, 255);
   align-self: center;
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
 }
 .journal-container02 {
   width: 100%;

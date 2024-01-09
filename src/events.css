@@ -447,6 +447,8 @@
 .events-text08 {
   color: rgb(255, 255, 255);
   align-self: center;
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
 }
 .events-container2 {
   width: 100%;
@@ -894,8 +896,8 @@
     margin-right: var(--dl-space-space-twounits);
   }
   .events-gallery {
-    padding-left: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
   }
   .events-gallery-card {
     flex-direction: column;
@@ -969,8 +971,8 @@
   }
   .events-gallery {
     padding-top: var(--dl-space-space-twounits);
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
     padding-bottom: var(--dl-space-space-twounits);
   }
   .events-image1 {

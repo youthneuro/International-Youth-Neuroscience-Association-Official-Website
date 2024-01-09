@@ -296,6 +296,14 @@
               >
                 Chapter Directory
               </a>
+              <a
+                href="https://drive.google.com/embeddedfolderview?id=1mgkF3r3jtWdUjdIky_D4S7TPAEuvFzVf#list"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="chapters-link2 button"
+              >
+                Chapter Activities
+              </a>
             </div>
           </div>
         </div>
@@ -468,117 +476,97 @@
                 https://forms.gle/cazmv96c63C2zSx36
               </span>
             </span>
+            <h1 class="chapters-text118">
+              <span>Current Ranking!</span>
+              <br />
+            </h1>
             <div class="chapters-container09"></div>
-          </div>
-        </div>
-        <div class="chapters-hero">
-          <div class="chapters-container10">
-            <h1 class="chapters-text118">IYNA Chapter Curated Activities</h1>
-            <span class="chapters-text119">
-              <span>
-                Just some suggestions on what your chapter can do to help
-                increase your point count. Let's race and see who can get the
-                most points!
-              </span>
-              <span>
-                <span></span>
-                <span></span>
-              </span>
-              <span>
-                <span></span>
-                <span></span>
-              </span>
-            </span>
-          </div>
-          <div class="chapters-container11">
-            <div class="chapters-container12">
-              <div class="chapters-container13">
-                <style>
-                  #rankings {
-                      width: 300px;
-                      height: 400px;
-                      margin: 20px auto;
-                      padding: 20px;
-                      background-color: rgba(0, 123, 255, 0.5); /* Semi-transparent blue */
-                      color: white;
-                      border-radius: 15px;
-                      overflow-y: scroll;
-                      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                  }
-                  .chapter {
-                      margin: 10px 0;
-                      padding: 10px;
-                      background-color: rgba(241, 241, 241, 0.5); /* Semi-transparent light gray */
-                      color: #007BFF;
-                      border-radius: 5px;
-                  }
-                  .points {
-                      color: #8B0000; /* Dark red */
-                  }
-                </style>
+            <div class="chapters-container10">
+              <div class="chapters-container11">
+                <div class="chapters-container12">
+                  <style>
+                    #rankings {
+                        width: 300px;
+                        height: 400px;
+                        margin: 20px auto;
+                        padding: 20px;
+                        background-color: rgba(0, 123, 255, 0.5); /* Semi-transparent blue */
+                        color: white;
+                        border-radius: 15px;
+                        overflow-y: scroll;
+                        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    }
+                    .chapter {
+                        margin: 10px 0;
+                        padding: 10px;
+                        background-color: rgba(241, 241, 241, 0.5); /* Semi-transparent light gray */
+                        color: #007BFF;
+                        border-radius: 5px;
+                    }
+                    .points {
+                        color: #8B0000; /* Dark red */
+                    }
+                  </style>
 
-                <div id="rankings">
-                  <h1 style="text-align: center;">Current Rankings</h1>
-                  <ul id="data-list">
-                    <!-- JavaScript will dynamically populate this list -->
-                  </ul>
+                  <div id="rankings">
+                    <h1 style="text-align: center;">Current Rankings</h1>
+                    <ul id="data-list">
+                      <!-- JavaScript will dynamically populate this list -->
+                    </ul>
+                  </div>
+
+                  <script>
+                    // URL to your Google Sheets document
+                    const googleSheetsUrl = 'https://docs.google.com/spreadsheets/d/1xaVpfD4CuM3qYyxMqWpNWs7CIcLENZFDb5pGh1AYzNk/gviz/tq?tqx=out:json';
+
+                    // Fetch data from Google Sheets
+                    fetch(googleSheetsUrl)
+                        .then(response => response.text())
+                        .then(data => {
+                            // Extract the JSON data from the Google Sheets API response
+                            const jsonMatch = data.match(/google\.visualization\.Query\.setResponse\((.*?)\);/);
+                            if (jsonMatch) {
+                                const jsonData = JSON.parse(jsonMatch[1]);
+
+                                // Extract rows of data
+                                const rows = jsonData.table.rows;
+
+                                // Access and display the data
+                                const dataList = document.getElementById('data-list');
+                                rows.forEach((row, index) => {
+                                    const [id, point, name, website] = row.c;
+                                    const listItem = document.createElement('div');
+                                    listItem.classList.add('chapter');
+                                    listItem.innerHTML = `${index + 1}. ${name.v}: <span class='points'>${point.v} points</span>`;
+                                    dataList.appendChild(listItem);
+                                });
+                            } else {
+                                console.error('Error parsing Google Sheets data.');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error fetching data:', error);
+                        });
+                  </script>
                 </div>
-
-                <script>
-                  // URL to your Google Sheets document
-                  const googleSheetsUrl = 'https://docs.google.com/spreadsheets/d/1xaVpfD4CuM3qYyxMqWpNWs7CIcLENZFDb5pGh1AYzNk/gviz/tq?tqx=out:json';
-
-                  // Fetch data from Google Sheets
-                  fetch(googleSheetsUrl)
-                      .then(response => response.text())
-                      .then(data => {
-                          // Extract the JSON data from the Google Sheets API response
-                          const jsonMatch = data.match(/google\.visualization\.Query\.setResponse\((.*?)\);/);
-                          if (jsonMatch) {
-                              const jsonData = JSON.parse(jsonMatch[1]);
-
-                              // Extract rows of data
-                              const rows = jsonData.table.rows;
-
-                              // Access and display the data
-                              const dataList = document.getElementById('data-list');
-                              rows.forEach((row, index) => {
-                                  const [id, point, name, website] = row.c;
-                                  const listItem = document.createElement('div');
-                                  listItem.classList.add('chapter');
-                                  listItem.innerHTML = `${index + 1}. ${name.v}: <span class='points'>${point.v} points</span>`;
-                                  dataList.appendChild(listItem);
-                              });
-                          } else {
-                              console.error('Error parsing Google Sheets data.');
-                          }
-                      })
-                      .catch(error => {
-                          console.error('Error fetching data:', error);
-                      });
-                </script>
               </div>
             </div>
-            <iframe
-              src="https://drive.google.com/embeddedfolderview?id=1mgkF3r3jtWdUjdIky_D4S7TPAEuvFzVf#list"
-              class="chapters-iframe1"
-            ></iframe>
           </div>
         </div>
         <footer class="chapters-footer">
-          <span class="chapters-text127">
+          <span class="chapters-text121">
             <br />
             <span>Our Partners</span>
           </span>
           <div class="chapters-blog">
-            <div class="chapters-container14">
-              <div class="chapters-container15">
+            <div class="chapters-container13">
+              <div class="chapters-container14">
                 <div class="chapters-blog-post-card">
                   <a
                     href="https://www.thebrainbee.org/"
                     target="_blank"
                     rel="noreferrer noopener"
-                    class="chapters-link2"
+                    class="chapters-link3"
                   >
                     <img
                       alt="image"
@@ -589,13 +577,13 @@
                 </div>
               </div>
             </div>
-            <div class="chapters-container16">
+            <div class="chapters-container15">
               <div class="chapters-blog-post-card1">
                 <a
                   href="https://www.google.com/aclk?sa=l&amp;ai=DChcSEwji9479lr2BAxUn3eMHHfjwCvEYABAAGgJ5bQ&amp;gclid=Cj0KCQjw06-oBhC6ARIsAGuzdw2NtaWo45LtNO0GwHoosFzeexOSFekcxzA6r5r2_nlEacsqU5T2VnAaAtLzEALw_wcB&amp;sig=AOD64_2xGumzuuUMwDhWjqeJ6MUyrVYS1Q&amp;q&amp;adurl&amp;ved=2ahUKEwiSmYb9lr2BAxVzlIkEHXqwAzMQ0Qx6BAgOEAE"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="chapters-link3"
+                  class="chapters-link4"
                 >
                   <img
                     alt="image"
@@ -605,13 +593,13 @@
                 </a>
               </div>
             </div>
-            <div class="chapters-container17">
+            <div class="chapters-container16">
               <div class="chapters-blog-post-card2">
                 <a
                   href="https://www.neuroethicssociety.org/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="chapters-link4"
+                  class="chapters-link5"
                 >
                   <img
                     alt="image"
@@ -623,8 +611,8 @@
             </div>
           </div>
           <div class="chapters-separator"></div>
-          <div class="chapters-container18">
-            <span class="chapters-text130">
+          <div class="chapters-container17">
+            <span class="chapters-text124">
               © 2023 International Youth Neuroscience Association, All Rights
               Reserved.
             </span>
@@ -633,7 +621,7 @@
                 href="https://twitter.com/iyna_official/status/1358998455289544704"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="chapters-link5"
+                class="chapters-link6"
               >
                 <svg
                   viewBox="0 0 950.8571428571428 1024"
@@ -648,7 +636,7 @@
                 href="https://www.instagram.com/iyna_official/"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="chapters-link6"
+                class="chapters-link7"
               >
                 <svg
                   viewBox="0 0 877.7142857142857 1024"
@@ -663,7 +651,7 @@
                 href="https://www.facebook.com/youthneuro/"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="chapters-link7"
+                class="chapters-link8"
               >
                 <svg
                   viewBox="0 0 602.2582857142856 1024"
