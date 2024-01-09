@@ -459,6 +459,7 @@
 .about-lottie-node {
   width: 454px;
   height: 352px;
+  margin-top: var(--dl-space-space-twounits);
 }
 .about-text11 {
   color: var(--dl-color-gray-white);

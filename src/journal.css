@@ -493,6 +493,7 @@
   width: 400px;
   align-self: center;
   margin-top: var(--dl-space-space-twounits);
+  text-align: center;
   margin-bottom: var(--dl-space-space-twounits);
 }
 .journal-text14 {

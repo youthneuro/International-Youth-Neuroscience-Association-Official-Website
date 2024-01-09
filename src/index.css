@@ -451,6 +451,7 @@
 .home-text08 {
   color: var(--dl-color-gray-white);
   font-size: 0.75rem;
+  text-align: center;
   letter-spacing: 2px;
 }
 .home-text09 {
