@@ -786,6 +786,42 @@
   margin-left: 40px;
   margin-right: 40px;
 }
+.summer-program-text064 {
+  font-weight: 700;
+}
+.summer-program-text071 {
+  font-weight: 700;
+}
+.summer-program-text078 {
+  font-weight: 700;
+}
+.summer-program-text085 {
+  font-weight: 700;
+}
+.summer-program-text092 {
+  font-weight: 700;
+}
+.summer-program-text099 {
+  font-weight: 700;
+}
+.summer-program-text105 {
+  font-weight: 700;
+}
+.summer-program-text112 {
+  font-weight: 700;
+}
+.summer-program-text119 {
+  font-weight: 700;
+}
+.summer-program-text125 {
+  font-weight: 700;
+}
+.summer-program-text126 {
+  font-weight: 700;
+}
+.summer-program-text133 {
+  font-weight: 700;
+}
 .summer-program-footer {
   width: 100%;
   display: flex;
@@ -798,7 +834,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
 }
-.summer-program-text131 {
+.summer-program-text141 {
   color: var(--dl-color-gray-black);
   font-size: 24px;
   font-style: normal;
@@ -1150,7 +1186,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .summer-program-text134 {
+  .summer-program-text144 {
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
@@ -1263,7 +1299,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .summer-program-text134 {
+  .summer-program-text144 {
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
