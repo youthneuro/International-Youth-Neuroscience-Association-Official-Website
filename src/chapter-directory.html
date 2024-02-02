@@ -10,7 +10,6 @@
 
   gtag('config', 'G-V87GK324ZH');
 </script>
-
     <title>chapter-directory - IYNA</title>
     <meta property="og:title" content="chapter-directory - IYNA" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -48,6 +47,46 @@
       href="public/download (10).png"
       type="icon/png"
       sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
     />
     <link
       rel="stylesheet"
@@ -327,9 +366,11 @@
           <div class="chapter-directory-container2">
             <div class="chapter-directory-container3">
               <style>
+                #searchInput {
+                  width: 100%;
+                }
                 body {
                   margin: 0;
-                  font-family: Arial, sans-serif;
                 }
 
                 .container {
@@ -347,6 +388,11 @@
                   box-sizing: border-box;
                 }
 
+                .rectangle h2 {
+                  font-size: 24px;
+                  font-weight: bold;
+                }
+
                 @media (max-width: 600px) {
                   .container {
                     grid-template-columns: 1fr;
@@ -354,10 +400,16 @@
                 }
               </style>
 
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search your school name to see how to get involved!"
+              />
               <div id="container" class="container"></div>
 
               <script>
                 var container = document.getElementById('container');
+                var searchInput = document.getElementById('searchInput');
 
                 // Replace this URL with your Google Sheets URL
                 const googleSheetsUrl =
@@ -370,24 +422,34 @@
                     if (jsonMatch) {
                       const jsonData = JSON.parse(jsonMatch[1]);
                       const rows = jsonData.table.rows;
-
                       if (rows.length === 0) {
                         // Display a 'help' message when there is no data
                         container.innerHTML =
                           '<p>No data available. Please check again later or contact support for assistance.</p>';
                       } else {
                         rows.forEach((row) => {
-                          const [id, point, name, website] = row.c;
+                          const [name, point, id, website] = row.c;
                           var rectangle = document.createElement('div');
                           rectangle.className = 'rectangle';
                           rectangle.innerHTML =
                             '<h2>' +
-                            name.v +
+                            '' + id.v +
                             '</h2>' +
+                            '<p>School Name: ' +
+                            name.v +
+                            '</p>' +
                             '<p>Point Number: ' +
                             point.v +
-                            '</p>';
+                            '</p>' +
+                            '<p><a href='' + website.v + '' target='_blank' style='color: blue;'>Learn how to join this student chapter</a></p>';
                           container.appendChild(rectangle);
+                        });
+
+
+
+                        // Add event listener for search input
+                        searchInput.addEventListener('input', function () {
+                          filterChapters(searchInput.value);
                         });
                       }
                     } else {
@@ -401,6 +463,18 @@
                     container.innerHTML =
                       '<p>An error occurred while fetching data. Please try again later or contact support for assistance.</p>';
                   });
+
+                function filterChapters(searchTerm) {
+                  const rectangles = document.getElementsByClassName('rectangle');
+                  for (const rectangle of rectangles) {
+                    const schoolName = rectangle.querySelector('p').innerText.toLowerCase();
+                    if (schoolName.includes(searchTerm.toLowerCase())) {
+                      rectangle.style.display = 'block';
+                    } else {
+                      rectangle.style.display = 'none';
+                    }
+                  }
+                }
               </script>
             </div>
           </div>
