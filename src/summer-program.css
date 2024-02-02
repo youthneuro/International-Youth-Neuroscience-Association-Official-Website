@@ -675,7 +675,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: var(--dl-color-primary-500);
+  background-color: #0273b1;
 }
 .summer-program-container08 {
   width: 100%;
@@ -685,7 +685,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--dl-color-primary-500);
+  background-color: #0273b1;
 }
 .summer-program-text044 {
   color: var(--dl-color-gray-white);
