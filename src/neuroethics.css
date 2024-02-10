@@ -609,8 +609,8 @@
   display: contents;
 }
 .neuroethics-image2 {
-  width: auto;
-  height: 117px;
+  width: 100%;
+  height: 102px;
   margin: 0px;
   object-fit: cover;
   text-decoration: none;
@@ -635,6 +635,7 @@
   color: var(--dl-color-gray-white);
   align-self: center;
   margin-top: var(--dl-space-space-twounits);
+  text-align: center;
 }
 .neuroethics-text25 {
   color: rgb(202, 233, 255);
@@ -1003,6 +1004,14 @@
   .neuroethics-image2 {
     width: 433px;
     height: 59px;
+  }
+  .neuroethics-iframe {
+    width: 478px;
+    height: 625px;
+  }
+  .neuroethics-iframe1 {
+    width: 478px;
+    height: 632px;
   }
   .neuroethics-footer {
     padding: var(--dl-space-space-unit);
