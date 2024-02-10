@@ -101,7 +101,7 @@
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.chapter-directory-dropdown-toggle1 {
+.chapter-directory-dropdown-toggle01 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -115,7 +115,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.chapter-directory-dropdown-toggle1:hover {
+.chapter-directory-dropdown-toggle01:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -134,7 +134,7 @@
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.chapter-directory-dropdown-toggle2 {
+.chapter-directory-dropdown-toggle02 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -148,7 +148,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.chapter-directory-dropdown-toggle2:hover {
+.chapter-directory-dropdown-toggle02:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -178,7 +178,7 @@
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.chapter-directory-dropdown-toggle3 {
+.chapter-directory-dropdown-toggle03 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -232,7 +232,7 @@
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.chapter-directory-dropdown-toggle4 {
+.chapter-directory-dropdown-toggle04 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -246,7 +246,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.chapter-directory-dropdown-toggle4:hover {
+.chapter-directory-dropdown-toggle04:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -271,7 +271,7 @@
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.chapter-directory-dropdown-toggle5 {
+.chapter-directory-dropdown-toggle05 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -285,7 +285,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.chapter-directory-dropdown-toggle5:hover {
+.chapter-directory-dropdown-toggle05:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -298,7 +298,7 @@
   font-style: normal;
   font-weight: 500;
 }
-.chapter-directory-dropdown-toggle6 {
+.chapter-directory-dropdown-toggle06 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -312,7 +312,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.chapter-directory-dropdown-toggle6:hover {
+.chapter-directory-dropdown-toggle06:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -325,7 +325,7 @@
   font-style: normal;
   font-weight: 500;
 }
-.chapter-directory-dropdown-toggle7 {
+.chapter-directory-dropdown-toggle07 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -339,7 +339,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.chapter-directory-dropdown-toggle7:hover {
+.chapter-directory-dropdown-toggle07:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -352,7 +352,7 @@
   font-style: normal;
   font-weight: 500;
 }
-.chapter-directory-dropdown-toggle8 {
+.chapter-directory-dropdown-toggle08 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -366,7 +366,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.chapter-directory-dropdown-toggle8:hover {
+.chapter-directory-dropdown-toggle08:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -379,17 +379,44 @@
   font-style: normal;
   font-weight: 500;
 }
-.chapter-directory-navlink11 {
+.chapter-directory-dropdown-toggle09 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius4);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.chapter-directory-dropdown-toggle09:hover {
+  fill: #fff;
+  color: #fff;
+  background-color: #595959;
+}
+.chapter-directory-text10 {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.chapter-directory-navlink12 {
   color: var(--dl-color-gray-white);
   margin-left: var(--dl-space-space-oneandhalfunits);
   text-decoration: none;
 }
-.chapter-directory-navlink12 {
+.chapter-directory-navlink13 {
   color: var(--dl-color-gray-white);
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
 }
-.chapter-directory-navlink13 {
+.chapter-directory-navlink14 {
   color: var(--dl-color-gray-white);
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
@@ -437,7 +464,7 @@
   margin-bottom: var(--dl-space-space-threeunits);
   justify-content: space-between;
 }
-.chapter-directory-navlink14 {
+.chapter-directory-navlink15 {
   display: contents;
 }
 .chapter-directory-logo {
@@ -460,10 +487,6 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.chapter-directory-navlink15 {
-  margin-bottom: var(--dl-space-space-unit);
-  text-decoration: none;
-}
 .chapter-directory-navlink16 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
@@ -485,6 +508,10 @@
   text-decoration: none;
 }
 .chapter-directory-navlink21 {
+  margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+}
+.chapter-directory-navlink22 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
@@ -515,7 +542,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
 }
-.chapter-directory-text10 {
+.chapter-directory-text11 {
   color: var(--dl-color-gray-black);
   font-size: 24px;
   font-style: normal;
@@ -722,11 +749,7 @@
     align-items: center;
     justify-content: center;
   }
-  .chapter-directory-navlink15 {
-    margin-bottom: var(--dl-space-space-unit);
-  }
   .chapter-directory-navlink16 {
-    margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
   .chapter-directory-navlink17 {
@@ -749,6 +772,10 @@
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
+  .chapter-directory-navlink22 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
   .chapter-directory-footer {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
@@ -768,7 +795,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .chapter-directory-text13 {
+  .chapter-directory-text14 {
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
@@ -798,7 +825,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .chapter-directory-text13 {
+  .chapter-directory-text14 {
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }

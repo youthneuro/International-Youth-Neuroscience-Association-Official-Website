@@ -101,7 +101,7 @@
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.summer-program-dropdown-toggle1 {
+.summer-program-dropdown-toggle01 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -115,7 +115,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.summer-program-dropdown-toggle1:hover {
+.summer-program-dropdown-toggle01:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -134,7 +134,7 @@
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.summer-program-dropdown-toggle2 {
+.summer-program-dropdown-toggle02 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -148,7 +148,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.summer-program-dropdown-toggle2:hover {
+.summer-program-dropdown-toggle02:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -178,7 +178,7 @@
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.summer-program-dropdown-toggle3 {
+.summer-program-dropdown-toggle03 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -232,7 +232,7 @@
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.summer-program-dropdown-toggle4 {
+.summer-program-dropdown-toggle04 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -246,7 +246,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.summer-program-dropdown-toggle4:hover {
+.summer-program-dropdown-toggle04:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -271,7 +271,7 @@
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.summer-program-dropdown-toggle5 {
+.summer-program-dropdown-toggle05 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -285,7 +285,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.summer-program-dropdown-toggle5:hover {
+.summer-program-dropdown-toggle05:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -298,7 +298,7 @@
   font-style: normal;
   font-weight: 500;
 }
-.summer-program-dropdown-toggle6 {
+.summer-program-dropdown-toggle06 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -312,7 +312,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.summer-program-dropdown-toggle6:hover {
+.summer-program-dropdown-toggle06:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -325,7 +325,7 @@
   font-style: normal;
   font-weight: 500;
 }
-.summer-program-dropdown-toggle7 {
+.summer-program-dropdown-toggle07 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -339,7 +339,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.summer-program-dropdown-toggle7:hover {
+.summer-program-dropdown-toggle07:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -352,7 +352,7 @@
   font-style: normal;
   font-weight: 500;
 }
-.summer-program-dropdown-toggle8 {
+.summer-program-dropdown-toggle08 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -366,7 +366,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.summer-program-dropdown-toggle8:hover {
+.summer-program-dropdown-toggle08:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
@@ -379,17 +379,44 @@
   font-style: normal;
   font-weight: 500;
 }
-.summer-program-navlink11 {
+.summer-program-dropdown-toggle09 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius4);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.summer-program-dropdown-toggle09:hover {
+  fill: #fff;
+  color: #fff;
+  background-color: #595959;
+}
+.summer-program-text010 {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.summer-program-navlink12 {
   color: var(--dl-color-gray-white);
   margin-left: var(--dl-space-space-oneandhalfunits);
   text-decoration: none;
 }
-.summer-program-navlink12 {
+.summer-program-navlink13 {
   color: var(--dl-color-gray-white);
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
 }
-.summer-program-navlink13 {
+.summer-program-navlink14 {
   color: var(--dl-color-gray-white);
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
@@ -437,7 +464,7 @@
   margin-bottom: var(--dl-space-space-threeunits);
   justify-content: space-between;
 }
-.summer-program-navlink14 {
+.summer-program-navlink15 {
   display: contents;
 }
 .summer-program-logo {
@@ -459,10 +486,6 @@
   align-self: flex-start;
   align-items: flex-start;
   flex-direction: column;
-}
-.summer-program-navlink15 {
-  margin-bottom: var(--dl-space-space-unit);
-  text-decoration: none;
 }
 .summer-program-navlink16 {
   margin-bottom: var(--dl-space-space-unit);
@@ -488,6 +511,10 @@
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
+.summer-program-navlink22 {
+  margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+}
 .summer-program-container01 {
   flex: 0 0 auto;
   width: 100%;
@@ -498,7 +525,7 @@
   justify-content: center;
   background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c4ebf289-f744-43c1-8d50-ce5fbf432fba/dg1w0q6-248f879c-2665-4c64-a38a-7edea7204307.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M0ZWJmMjg5LWY3NDQtNDNjMS04ZDUwLWNlNWZiZjQzMmZiYVwvZGcxdzBxNi0yNDhmODc5Yy0yNjY1LTRjNjQtYTM4YS03ZWRlYTcyMDQzMDcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.PuDOoTVkkT2Cuzw1OGRu4kNUh8Cu8PkMhdXGRj7o_mo');
 }
-.summer-program-text010 {
+.summer-program-text011 {
   color: rgb(255, 255, 255);
   align-self: center;
   margin-left: var(--dl-space-space-unit);
@@ -524,7 +551,7 @@
   justify-content: center;
   background-color: #D9D9D9;
 }
-.summer-program-text013 {
+.summer-program-text014 {
   align-self: center;
 }
 .summer-program-container03 {
@@ -544,19 +571,19 @@
   align-items: center;
   flex-direction: column;
 }
-.summer-program-text017 {
+.summer-program-text018 {
   color: #153446;
   font-size: 4rem;
   text-align: center;
   font-weight: 900;
   margin-bottom: -30px;
 }
-.summer-program-text019 {
+.summer-program-text020 {
   font-size: 1.15rem;
   margin-top: var(--dl-space-space-twounits);
   font-weight: 500;
 }
-.summer-program-text020 {
+.summer-program-text021 {
   color: var(--dl-color-gray-500);
   font-size: 0.75rem;
   margin-top: var(--dl-space-space-oneandhalfunits);
@@ -569,19 +596,19 @@
   align-items: center;
   flex-direction: column;
 }
-.summer-program-text023 {
+.summer-program-text024 {
   color: #153446;
   font-size: 4rem;
   text-align: center;
   font-weight: 900;
   margin-bottom: -30px;
 }
-.summer-program-text024 {
+.summer-program-text025 {
   font-size: 1.15rem;
   margin-top: var(--dl-space-space-twounits);
   font-weight: 500;
 }
-.summer-program-text025 {
+.summer-program-text026 {
   color: var(--dl-color-gray-500);
   font-size: 0.75rem;
   margin-top: var(--dl-space-space-oneandhalfunits);
@@ -599,19 +626,19 @@
   align-items: center;
   flex-direction: column;
 }
-.summer-program-text028 {
+.summer-program-text029 {
   color: #153446;
   font-size: 4rem;
   text-align: center;
   font-weight: 900;
   margin-bottom: -30px;
 }
-.summer-program-text029 {
+.summer-program-text030 {
   font-size: 1.15rem;
   margin-top: var(--dl-space-space-twounits);
   font-weight: 500;
 }
-.summer-program-text030 {
+.summer-program-text031 {
   color: var(--dl-color-gray-500);
   font-size: 0.75rem;
   margin-top: var(--dl-space-space-oneandhalfunits);
@@ -624,19 +651,19 @@
   align-items: center;
   flex-direction: column;
 }
-.summer-program-text033 {
+.summer-program-text034 {
   color: #153446;
   font-size: 4rem;
   text-align: center;
   font-weight: 900;
   margin-bottom: -30px;
 }
-.summer-program-text035 {
+.summer-program-text036 {
   font-size: 1.15rem;
   margin-top: var(--dl-space-space-twounits);
   font-weight: 500;
 }
-.summer-program-text036 {
+.summer-program-text037 {
   color: var(--dl-color-gray-500);
   font-size: 0.75rem;
   margin-top: var(--dl-space-space-oneandhalfunits);
@@ -656,7 +683,7 @@
   height: 367px;
   margin-top: var(--dl-space-space-oneandhalfunits);
 }
-.summer-program-text039 {
+.summer-program-text040 {
   color: #CAE9FF;
   margin: var(--dl-space-space-unit);
   font-size: 20px;
@@ -687,10 +714,10 @@
   justify-content: center;
   background-color: #0273b1;
 }
-.summer-program-text044 {
+.summer-program-text045 {
   color: var(--dl-color-gray-white);
 }
-.summer-program-text047 {
+.summer-program-text048 {
   color: var(--dl-color-gray-white);
   font-size: 0.75rem;
   max-width: 600px;
@@ -725,17 +752,17 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.summer-program-text050 {
+.summer-program-text051 {
   color: var(--dl-color-gray-500);
   text-align: center;
   margin-bottom: var(--dl-space-space-threeunits);
 }
-.summer-program-text051 {
+.summer-program-text052 {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.summer-program-text052 {
+.summer-program-text053 {
   color: var(--dl-color-gray-500);
   font-weight: 600;
   margin-bottom: var(--dl-space-space-unit);
@@ -767,17 +794,17 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.summer-program-text055 {
+.summer-program-text056 {
   color: var(--dl-color-gray-500);
   text-align: center;
   margin-bottom: var(--dl-space-space-threeunits);
 }
-.summer-program-text056 {
+.summer-program-text057 {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.summer-program-text057 {
+.summer-program-text058 {
   color: var(--dl-color-gray-500);
   font-weight: 600;
   margin-bottom: var(--dl-space-space-unit);
@@ -809,17 +836,17 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.summer-program-text058 {
+.summer-program-text059 {
   color: var(--dl-color-gray-500);
   text-align: center;
   margin-bottom: var(--dl-space-space-threeunits);
 }
-.summer-program-text059 {
+.summer-program-text060 {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.summer-program-text060 {
+.summer-program-text061 {
   color: var(--dl-color-gray-500);
   font-weight: 600;
   margin-bottom: var(--dl-space-space-unit);
@@ -831,49 +858,49 @@
   object-fit: cover;
   border-radius: var(--dl-radius-radius-round);
 }
-.summer-program-text061 {
+.summer-program-text062 {
   text-align: center;
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.summer-program-text064 {
+.summer-program-text065 {
   margin-left: 40px;
   margin-right: 40px;
 }
-.summer-program-text066 {
+.summer-program-text067 {
   font-weight: 700;
 }
-.summer-program-text073 {
+.summer-program-text074 {
   font-weight: 700;
 }
-.summer-program-text080 {
+.summer-program-text081 {
   font-weight: 700;
 }
-.summer-program-text087 {
+.summer-program-text088 {
   font-weight: 700;
 }
-.summer-program-text094 {
+.summer-program-text095 {
   font-weight: 700;
 }
-.summer-program-text101 {
+.summer-program-text102 {
   font-weight: 700;
 }
-.summer-program-text107 {
+.summer-program-text108 {
   font-weight: 700;
 }
-.summer-program-text114 {
+.summer-program-text115 {
   font-weight: 700;
 }
-.summer-program-text121 {
-  font-weight: 700;
-}
-.summer-program-text127 {
+.summer-program-text122 {
   font-weight: 700;
 }
 .summer-program-text128 {
   font-weight: 700;
 }
-.summer-program-text135 {
+.summer-program-text129 {
+  font-weight: 700;
+}
+.summer-program-text136 {
   font-weight: 700;
 }
 .summer-program-footer {
@@ -888,7 +915,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
 }
-.summer-program-text143 {
+.summer-program-text144 {
   color: var(--dl-color-gray-black);
   font-size: 24px;
   font-style: normal;
@@ -1075,54 +1102,54 @@
   .summer-program-container06 {
     height: 586px;
   }
-  .summer-program-text039 {
+  .summer-program-text040 {
     margin: var(--dl-space-space-unit);
   }
 }
 @media(max-width: 991px) {
-  .summer-program-text017 {
+  .summer-program-text018 {
     text-align: center;
   }
-  .summer-program-text019 {
-    text-align: center;
-  }
-  .summer-program-text023 {
+  .summer-program-text020 {
     text-align: center;
   }
   .summer-program-text024 {
     text-align: center;
   }
-  .summer-program-text028 {
+  .summer-program-text025 {
     text-align: center;
   }
   .summer-program-text029 {
     text-align: center;
   }
-  .summer-program-text033 {
+  .summer-program-text030 {
     text-align: center;
   }
-  .summer-program-text035 {
+  .summer-program-text034 {
+    text-align: center;
+  }
+  .summer-program-text036 {
     text-align: center;
   }
   .summer-program-container06 {
     height: 629px;
   }
-  .summer-program-text044 {
+  .summer-program-text045 {
     text-align: center;
   }
-  .summer-program-text047 {
+  .summer-program-text048 {
     text-align: center;
   }
   .summer-program-container09 {
     grid-template-columns: 1fr;
   }
-  .summer-program-text052 {
+  .summer-program-text053 {
     align-self: center;
   }
-  .summer-program-text057 {
+  .summer-program-text058 {
     align-self: center;
   }
-  .summer-program-text060 {
+  .summer-program-text061 {
     align-self: center;
   }
   .summer-program-blog {
@@ -1146,11 +1173,7 @@
     align-items: center;
     justify-content: center;
   }
-  .summer-program-navlink15 {
-    margin-bottom: var(--dl-space-space-unit);
-  }
   .summer-program-navlink16 {
-    margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
   .summer-program-navlink17 {
@@ -1173,10 +1196,14 @@
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
+  .summer-program-navlink22 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
   .summer-program-container01 {
     height: 130px;
   }
-  .summer-program-text010 {
+  .summer-program-text011 {
     color: rgb(255, 255, 255);
     width: var(--dl-size-size-maxwidth);
     align-self: center;
@@ -1240,7 +1267,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .summer-program-text146 {
+  .summer-program-text147 {
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
@@ -1255,7 +1282,7 @@
   .summer-program-container01 {
     height: 131px;
   }
-  .summer-program-text010 {
+  .summer-program-text011 {
     align-self: center;
     text-align: center;
   }
@@ -1290,13 +1317,13 @@
   .summer-program-icon08 {
     margin-bottom: var(--dl-space-space-unit);
   }
-  .summer-program-text050 {
+  .summer-program-text051 {
     margin-bottom: var(--dl-space-space-twounits);
   }
-  .summer-program-text051 {
+  .summer-program-text052 {
     margin-bottom: var(--dl-space-space-halfunit);
   }
-  .summer-program-text052 {
+  .summer-program-text053 {
     margin-bottom: var(--dl-space-space-unit);
   }
   .summer-program-testimonial-card1 {
@@ -1308,13 +1335,13 @@
   .summer-program-icon10 {
     margin-bottom: var(--dl-space-space-unit);
   }
-  .summer-program-text055 {
+  .summer-program-text056 {
     margin-bottom: var(--dl-space-space-twounits);
   }
-  .summer-program-text056 {
+  .summer-program-text057 {
     margin-bottom: var(--dl-space-space-halfunit);
   }
-  .summer-program-text057 {
+  .summer-program-text058 {
     margin-bottom: var(--dl-space-space-unit);
   }
   .summer-program-testimonial-card2 {
@@ -1326,13 +1353,13 @@
   .summer-program-icon12 {
     margin-bottom: var(--dl-space-space-unit);
   }
-  .summer-program-text058 {
+  .summer-program-text059 {
     margin-bottom: var(--dl-space-space-twounits);
   }
-  .summer-program-text059 {
+  .summer-program-text060 {
     margin-bottom: var(--dl-space-space-halfunit);
   }
-  .summer-program-text060 {
+  .summer-program-text061 {
     margin-bottom: var(--dl-space-space-unit);
   }
   .summer-program-footer {
@@ -1353,7 +1380,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .summer-program-text146 {
+  .summer-program-text147 {
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
