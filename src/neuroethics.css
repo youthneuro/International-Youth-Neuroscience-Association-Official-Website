@@ -660,6 +660,9 @@
   color: var(--dl-color-gray-white);
   align-self: center;
   margin-top: var(--dl-space-space-twounits);
+  text-align: center;
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
 }
 .neuroethics-iframe {
   width: 710px;
@@ -958,6 +961,14 @@
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
+  .neuroethics-iframe {
+    width: 499px;
+    height: 612px;
+  }
+  .neuroethics-iframe1 {
+    width: 510px;
+    height: 666px;
+  }
   .neuroethics-footer {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
@@ -1006,12 +1017,12 @@
     height: 59px;
   }
   .neuroethics-iframe {
-    width: 478px;
-    height: 625px;
+    width: 320px;
+    height: 421px;
   }
   .neuroethics-iframe1 {
-    width: 478px;
-    height: 632px;
+    width: 320px;
+    height: 419px;
   }
   .neuroethics-footer {
     padding: var(--dl-space-space-unit);
