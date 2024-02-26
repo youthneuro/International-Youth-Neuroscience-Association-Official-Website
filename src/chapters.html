@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V87GK324ZH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-V87GK324ZH');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V87GK324ZH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-V87GK324ZH');
+    </script>
     <title>Chapters - IYNA</title>
     <meta property="og:title" content="Chapters - IYNA" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -428,30 +429,75 @@
                     Chapter Activities
                   </a>
                 </div>
+                <div class="chapters-container04">
+                  <div class="chapters-container05">
+                    <style>
+                      body {
+                          margin: 0;
+                          width: 100%;
+                          height: 100%;
+                      }
+
+                      #announcementText {
+                          padding-top: 40px;
+                          padding-left: 40px;
+                          padding-right: 40px;
+                          padding-bottom: 40px;
+                          background-color: #153446; /* Dark blue */
+                          color: white;
+                          width: 100%;
+                          overflow: auto; /* Enable scrolling */
+                          max-height: 200px; /* Set a maximum height for the scrolling area */
+                      }
+                    </style>
+
+                    <div id="announcementText"></div>
+
+                    <script>
+                      // URL to your Google Sheets document
+                      const googleSheetsUrl = 'https://docs.google.com/spreadsheets/d/1xaVpfD4CuM3qYyxMqWpNWs7CIcLENZFDb5pGh1AYzNk/gviz/tq?tqx=out:json';
+
+                      // Fetch data from Google Sheets
+                      fetch(googleSheetsUrl)
+                          .then(response => response.text())
+                          .then(data => {
+                              // Extract the JSON data from the Google Sheets API response
+                              const jsonMatch = data.match(/google\.visualization\.Query\.setResponse\((.*?)\);/);
+                              if (jsonMatch) {
+                                  const jsonData = JSON.parse(jsonMatch[1]);
+
+                                  // Extract rows of data
+                                  const rows = jsonData.table.rows;
+
+                                  // Access and display the announcement text from the 5th index
+                                  const announcementText = rows[0].c[4].v;
+
+                                  // Display the announcement text
+                                  const announcementTextElement = document.getElementById('announcementText');
+                                  announcementTextElement.innerHTML = announcementText.repeat(10); // Repeat the content to make it longer
+                              } else {
+                                  console.error('Error parsing Google Sheets data.');
+                              }
+                          })
+                          .catch(error => {
+                              console.error('Error fetching data:', error);
+                          });
+                    </script>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="chapters-container04">
-              <div class="chapters-feature-card">
-                <h2 class="chapters-text019">Chapter of the Season</h2>
-                <span class="chapters-text020">
-                  <span class="chapters-text021">USA011</span>
-                  <br class="chapters-text022" />
-                  <br class="chapters-text023" />
-                  <span class="chapters-text024">Glendora High School</span>
-                  <br />
-                </span>
-                <span class="chapters-text026">LED BY: Katherine Carpio</span>
-              </div>
-              <div class="chapters-container05">
-                <div class="chapters-container06">
-                  <div class="chapters-container07">
+            <div class="chapters-container06">
+              <div class="chapters-container07">
+                <div class="chapters-container08">
+                  <div class="chapters-container09">
                     <style>
                       #rankings {
                           width: 300px;
                           height: 400px;
                           margin: 20px auto;
                           padding: 20px;
-                          background-color: rgba(0, 123, 255, 0.5); /* Semi-transparent blue */
+                          background-color: #1d3343; /* Dark blue */
                           color: white;
                           border-radius: 15px;
                           overflow-y: scroll;
@@ -460,17 +506,39 @@
                       .chapter {
                           margin: 10px 0;
                           padding: 10px;
-                          background-color: rgba(241, 241, 241, 0.5); /* Semi-transparent light gray */
-                          color: #007BFF;
+                          background-color: #446e8b; /* Dark blue */
+                          color: white;
                           border-radius: 5px;
                       }
                       .points {
-                          color: #8B0000; /* Dark red */
+                          color: white; /* White */
+                      }
+                      #divider {
+                          border-top: 2px solid white;
+                          margin-bottom: 10px;
+                      }
+                      #topChapter {
+                          margin-bottom: 10px;
+                          font-weight: bold;
+                          font-size: 24px; /* Larger size */
+                          color: #5e86a3; /* New color for Chapter of the Season */
+                          text-align: center; /* Centered */
+                      }
+                      #chapterInfo {
+                          font-size: 18px; /* Larger size for Chapter ID and School Name */
+                          color: white;
+                          text-align: center; /* Centered */
+                          margin-bottom: 10px;
                       }
                     </style>
 
                     <div id="rankings">
-                      <h1 style="text-align: center;">Current Rankings</h1>
+                      <div id="topChapter"></div>
+                      <div id="chapterInfo">
+                        <div id="chapterID"></div>
+                      </div>
+                      <div id="divider"></div>
+                      <h1 style="text-align: center;">Rankings</h1>
                       <ul id="data-list">
                         <!-- JavaScript will dynamically populate this list -->
                       </ul>
@@ -494,8 +562,33 @@
 
                                   // Access and display the data
                                   const dataList = document.getElementById('data-list');
+                                  let maxPoints = -1;
+                                  let topChapter;
+
+                                  // Display information from the second row for 'Chapter of the Season'
+                                  const [topChapterSchool, pointss, topChapterName] = rows[0].c;
+
+                                  // Display the chapter with the most points as a header
+                                  if (topChapterName && topChapterSchool) {
+                                      const topChapterElement = document.getElementById('topChapter');
+                                      topChapterElement.innerHTML = `Chapter of the Season: ${topChapterName.v}`;
+
+                                      // Display Chapter ID from the data
+                                      const chapterIDElement = document.getElementById('chapterID');
+
+                                      chapterIDElement.innerHTML = `${topChapterSchool.v}`;
+                                  }
+
+                                  // Display the rest of the data
                                   rows.forEach((row, index) => {
                                       const [id, point, name, website] = row.c;
+
+                                      // Check for the chapter with the most points
+                                      if (point.v > maxPoints) {
+                                          maxPoints = point.v;
+                                          topChapter = name.v;
+                                      }
+
                                       const listItem = document.createElement('div');
                                       listItem.classList.add('chapter');
                                       listItem.innerHTML = `${index + 1}. ${name.v}: <span class='points'>${point.v} points</span>`;
@@ -515,29 +608,29 @@
             </div>
           </div>
         </div>
-        <div class="chapters-container08">
+        <div class="chapters-container10">
           <iframe
             src="https://www.google.com/maps/d/u/6/embed?mid=1jv-Ga1L4YoelaxpI1XBIiMDwwSMOBIo&amp;ehbc=2E312F&amp;noprof=1"
             allowfullscreen=""
             class="chapters-iframe"
           ></iframe>
         </div>
-        <div class="chapters-container09">
-          <div class="chapters-container10"></div>
-        </div>
         <div class="chapters-container11">
-          <h1 class="chapters-text027">
+          <div class="chapters-container12"></div>
+        </div>
+        <div class="chapters-container13">
+          <h1 class="chapters-text019">
             <span>Chapter Point Activities</span>
             <br />
           </h1>
         </div>
         <div class="chapters-blog">
-          <div class="chapters-container12">
+          <div class="chapters-container14">
             <div class="chapters-blog-post-card">
-              <div class="chapters-container13">
-                <span class="chapters-text030">CODE: 0001</span>
-                <span class="chapters-text031">
-                  <span class="chapters-text032">[TASK]</span>
+              <div class="chapters-container15">
+                <span class="chapters-text022">CODE: 0001</span>
+                <span class="chapters-text023">
+                  <span class="chapters-text024">[TASK]</span>
                   <span>
                     Post about your new Chapter on your social media accounts!
                     Don't forget to include the link to our website
@@ -546,58 +639,58 @@
                   </span>
                   <br />
                   <br />
-                  <span class="chapters-text036">[DEADLINE]</span>
+                  <span class="chapters-text028">[DEADLINE]</span>
                   <span>None</span>
-                  <br class="chapters-text038" />
-                  <br class="chapters-text039" />
-                  <span class="chapters-text040">[REWARD]</span>
+                  <br class="chapters-text030" />
+                  <br class="chapters-text031" />
+                  <span class="chapters-text032">[REWARD]</span>
                   <span>10 points (can be redeemed once per season)</span>
                   <br />
                   <br />
-                  <span class="chapters-text044">
+                  <span class="chapters-text036">
                     Submit evidence here once complete:
                   </span>
                   <span>https://forms.gle/cazmv96c63C2zSx36</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="chapters-container14">
-            <div class="chapters-blog-post-card1">
-              <div class="chapters-container15">
-                <span class="chapters-text046">CODE: 0002</span>
-                <span class="chapters-text047">
-                  <span class="chapters-text048">[TASK]</span>
-                  <span>Include your ChapterID in your display name!</span>
-                  <br />
-                  <br />
-                  <span class="chapters-text052">[DEADLINE]</span>
-                  <span>None</span>
-                  <br class="chapters-text054" />
-                  <br class="chapters-text055" />
-                  <span class="chapters-text056">[REWARD]</span>
-                  <span>2 points</span>
-                  <br />
-                  <br class="chapters-text059" />
-                  <span class="chapters-text060">
-                    Submit evidence here once complete:
-                  </span>
-                  <span>https://forms.gle/cazmv96c63C2zSx36</span>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
                 </span>
               </div>
             </div>
           </div>
           <div class="chapters-container16">
-            <div class="chapters-blog-post-card2">
+            <div class="chapters-blog-post-card1">
               <div class="chapters-container17">
-                <span class="chapters-text067">CODE 0003</span>
-                <span class="chapters-text068">
-                  <span class="chapters-text069">[TASK]</span>
+                <span class="chapters-text038">CODE: 0002</span>
+                <span class="chapters-text039">
+                  <span class="chapters-text040">[TASK]</span>
+                  <span>Include your ChapterID in your display name!</span>
+                  <br />
+                  <br />
+                  <span class="chapters-text044">[DEADLINE]</span>
+                  <span>None</span>
+                  <br class="chapters-text046" />
+                  <br class="chapters-text047" />
+                  <span class="chapters-text048">[REWARD]</span>
+                  <span>2 points</span>
+                  <br />
+                  <br class="chapters-text051" />
+                  <span class="chapters-text052">
+                    Submit evidence here once complete:
+                  </span>
+                  <span>https://forms.gle/cazmv96c63C2zSx36</span>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="chapters-container18">
+            <div class="chapters-blog-post-card2">
+              <div class="chapters-container19">
+                <span class="chapters-text059">CODE 0003</span>
+                <span class="chapters-text060">
+                  <span class="chapters-text061">[TASK]</span>
                   <span>
                     Like our latest post
                     (https://www.instagram.com/p/CyOuY2WRxxK/) and comment your
@@ -605,15 +698,15 @@
                   </span>
                   <br />
                   <br />
-                  <span class="chapters-text073">[DEADLINE]</span>
+                  <span class="chapters-text065">[DEADLINE]</span>
                   <span>December 1st</span>
                   <br />
                   <br />
-                  <span class="chapters-text077">[REWARD]</span>
+                  <span class="chapters-text069">[REWARD]</span>
                   <span>5 points</span>
                   <br />
                   <br />
-                  <span class="chapters-text081">
+                  <span class="chapters-text073">
                     Submit evidence here once complete:
                   </span>
                   <span>https://forms.gle/cazmv96c63C2zSx36</span>
@@ -627,23 +720,23 @@
           </div>
         </div>
         <div class="chapters-blog1">
-          <div class="chapters-container18">
+          <div class="chapters-container20">
             <div class="chapters-blog-post-card3">
-              <div class="chapters-container19">
-                <span class="chapters-text087">CODE: 0004</span>
-                <span class="chapters-text088">
-                  <span class="chapters-text089">[TASK]</span>
+              <div class="chapters-container21">
+                <span class="chapters-text079">CODE: 0004</span>
+                <span class="chapters-text080">
+                  <span class="chapters-text081">[TASK]</span>
                   <span>
                     Register for the IYNA’s Brain Bee Bootcamp and encourage
                     your peers to do so as well!&nbsp;
                   </span>
                   <br />
                   <br />
-                  <span class="chapters-text093">[DEADLINE]</span>
+                  <span class="chapters-text085">[DEADLINE]</span>
                   <span>October 14th, midnight GMT</span>
                   <br />
                   <br />
-                  <span class="chapters-text097">[REWARD]</span>
+                  <span class="chapters-text089">[REWARD]</span>
                   <span>
                     20 points for each person registered (Make sure to add your
                     referral code, your ChapterID in the form so that we can
@@ -651,7 +744,7 @@
                   </span>
                   <br />
                   <br />
-                  <span class="chapters-text101">
+                  <span class="chapters-text093">
                     Submit evidence here once complete:
                   </span>
                   <span>https://forms.gle/cazmv96c63C2zSx36</span>
@@ -661,12 +754,12 @@
               </div>
             </div>
           </div>
-          <div class="chapters-container20">
+          <div class="chapters-container22">
             <div class="chapters-blog-post-card4">
-              <div class="chapters-container21">
-                <span class="chapters-text105">CODE: 0005</span>
-                <span class="chapters-text106">
-                  <span class="chapters-text107">[TASK]</span>
+              <div class="chapters-container23">
+                <span class="chapters-text097">CODE: 0005</span>
+                <span class="chapters-text098">
+                  <span class="chapters-text099">[TASK]</span>
                   <span>
                     Hold your own in-person event/activity for your Chapter!
                     Feel free to base this off of the activity guides we've
@@ -674,11 +767,11 @@
                   </span>
                   <br />
                   <br />
-                  <span class="chapters-text111">[DEADLINE]</span>
+                  <span class="chapters-text103">[DEADLINE]</span>
                   <span>None</span>
                   <br />
                   <br />
-                  <span class="chapters-text115">[REWARD]</span>
+                  <span class="chapters-text107">[REWARD]</span>
                   <span>
                     20 points for carrying out the activity and 5 additional
                     points for each person that attends!(Evidence of this could
@@ -687,7 +780,7 @@
                   </span>
                   <br />
                   <br />
-                  <span class="chapters-text119">
+                  <span class="chapters-text111">
                     Submit evidence here once complete:
                   </span>
                   <span>https://forms.gle/cazmv96c63C2zSx36</span>
@@ -696,12 +789,12 @@
               </div>
             </div>
           </div>
-          <div class="chapters-container22">
+          <div class="chapters-container24">
             <div class="chapters-blog-post-card5">
-              <div class="chapters-container23">
-                <span class="chapters-text122">CODE 0006</span>
-                <span class="chapters-text123">
-                  <span class="chapters-text124">[TASK]</span>
+              <div class="chapters-container25">
+                <span class="chapters-text114">CODE 0006</span>
+                <span class="chapters-text115">
+                  <span class="chapters-text116">[TASK]</span>
                   <span>
                     Comment either a pumpkin 🎃 or a brain 🧠 emoji to show your
                     support!
@@ -709,15 +802,15 @@
                   </span>
                   <br />
                   <br />
-                  <span class="chapters-text128">[DEADLINE]</span>
+                  <span class="chapters-text120">[DEADLINE]</span>
                   <span>November 5th</span>
                   <br />
                   <br />
-                  <span class="chapters-text132">[REWARD]</span>
+                  <span class="chapters-text124">[REWARD]</span>
                   <span>5 points</span>
                   <br />
                   <br />
-                  <span class="chapters-text136">
+                  <span class="chapters-text128">
                     Submit evidence here once complete:
                   </span>
                   <span>https://forms.gle/cazmv96c63C2zSx36</span>
@@ -732,13 +825,13 @@
           </div>
         </div>
         <footer class="chapters-footer">
-          <span class="chapters-text143">
+          <span class="chapters-text135">
             <br />
             <span>Our Partners</span>
           </span>
           <div class="chapters-blog2">
-            <div class="chapters-container24">
-              <div class="chapters-container25">
+            <div class="chapters-container26">
+              <div class="chapters-container27">
                 <div class="chapters-blog-post-card6">
                   <a
                     href="https://www.thebrainbee.org/"
@@ -755,7 +848,7 @@
                 </div>
               </div>
             </div>
-            <div class="chapters-container26">
+            <div class="chapters-container28">
               <div class="chapters-blog-post-card7">
                 <a
                   href="https://www.alz.org/"
@@ -771,7 +864,7 @@
                 </a>
               </div>
             </div>
-            <div class="chapters-container27">
+            <div class="chapters-container29">
               <div class="chapters-blog-post-card8">
                 <a
                   href="https://www.neuroethicssociety.org/"
@@ -789,8 +882,8 @@
             </div>
           </div>
           <div class="chapters-separator"></div>
-          <div class="chapters-container28">
-            <span class="chapters-text146">
+          <div class="chapters-container30">
+            <span class="chapters-text138">
               © 2023 International Youth Neuroscience Association, All Rights
               Reserved.
             </span>
