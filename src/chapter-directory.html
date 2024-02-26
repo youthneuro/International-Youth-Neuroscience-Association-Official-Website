@@ -470,19 +470,37 @@
                           const [name, point, id, website] = row.c;
                           var rectangle = document.createElement('div');
                           rectangle.className = 'rectangle';
-                          rectangle.innerHTML =
-                              '<h2>' +
-                              id.v +
-                              '</h2>' +
-                              '<p>School Name: ' +
-                              name.v +
-                              '</p>' +
-                              '<p>Point Number: ' +
-                              point.v +
-                              '</p>' +
-                              '<p><a href="' + website.v + '" target="_blank" style="color: blue;">Learn how to join this student chapter</a></p>';
+
+                          // Check if website.v is defined and not blank
+                          if (website && website.v.trim() !== '') {
+                              rectangle.innerHTML =
+                                  '<h2>' +
+                                  id.v +
+                                  '</h2>' +
+                                  '<p>School Name: ' +
+                                  name.v +
+                                  '</p>' +
+                                  '<p>Point Number: ' +
+                                  point.v +
+                                  '</p>' +
+                                  '<p><a href="' + website.v + '" target="_blank" style="color: blue;">Learn how to join this student chapter</a></p>';
+                          } else {
+                              rectangle.innerHTML =
+                                  '<h2>' +
+                                  id.v +
+                                  '</h2>' +
+                                  '<p>School Name: ' +
+                                  name.v +
+                                  '</p>' +
+                                  '<p>Point Number: ' +
+                                  point.v +
+                                  '</p>' +
+                                  '<p>No website available for joining</p>';
+                          }
+
                           container.appendChild(rectangle);
                       });
+
 
 
 
