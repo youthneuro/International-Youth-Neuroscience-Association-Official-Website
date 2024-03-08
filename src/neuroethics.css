@@ -537,10 +537,57 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-start;
+  background-color: #0273b1;
+}
+.neuroethics-text14 {
+  color: var(--dl-color-gray-white);
+  align-self: center;
+  margin-top: var(--dl-space-space-twounits);
+  text-align: center;
+}
+.neuroethics-text17 {
+  color: rgb(202, 233, 255);
+  font-size: 20px;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  text-align: center;
+  margin-left: var(--dl-space-space-twounits);
+  margin-right: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.neuroethics-text19 {
+  font-weight: 700;
+}
+.neuroethics-text24 {
+  font-weight: 700;
+}
+.neuroethics-link {
+  color: var(--dl-color-gray-white);
+  margin-top: var(--dl-space-space-unit);
+  transition: 0.3s;
+  padding-top: var(--dl-space-space-unit);
+  border-color: #102632;
+  padding-left: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(16, 38, 50);
+}
+.neuroethics-link:hover {
+  transform: scale(1.02);
+}
+.neuroethics-container03 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
   background-color: #0f4d6b;
 }
-.neuroethics-text14 {
+.neuroethics-text27 {
   color: var(--dl-color-gray-white);
   align-self: center;
   margin-top: var(--dl-space-space-twounits);
@@ -553,7 +600,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.neuroethics-container03 {
+.neuroethics-container04 {
   display: flex;
   align-items: center;
   margin-right: var(--dl-space-space-twounits);
@@ -574,7 +621,7 @@
 .neuroethics-blog-post-card:hover {
   transform: scale(1.02);
 }
-.neuroethics-link {
+.neuroethics-link1 {
   display: contents;
 }
 .neuroethics-image1 {
@@ -585,7 +632,7 @@
   object-fit: cover;
   text-decoration: none;
 }
-.neuroethics-container04 {
+.neuroethics-container05 {
   display: flex;
   align-items: center;
   margin-right: var(--dl-space-space-twounits);
@@ -605,7 +652,7 @@
 .neuroethics-blog-post-card1:hover {
   transform: scale(1.02);
 }
-.neuroethics-link1 {
+.neuroethics-link2 {
   display: contents;
 }
 .neuroethics-image2 {
@@ -615,14 +662,14 @@
   object-fit: cover;
   text-decoration: none;
 }
-.neuroethics-text17 {
+.neuroethics-text30 {
   color: rgb(202, 233, 255);
   margin: var(--dl-space-space-twounits);
   font-size: 20px;
   align-self: center;
   text-align: center;
 }
-.neuroethics-container05 {
+.neuroethics-container06 {
   width: 100%;
   height: auto;
   display: flex;
@@ -631,13 +678,13 @@
   justify-content: flex-start;
   background-color: #0273b1;
 }
-.neuroethics-text22 {
+.neuroethics-text35 {
   color: var(--dl-color-gray-white);
   align-self: center;
   margin-top: var(--dl-space-space-twounits);
   text-align: center;
 }
-.neuroethics-text25 {
+.neuroethics-text38 {
   color: rgb(202, 233, 255);
   font-size: 20px;
   align-self: center;
@@ -647,7 +694,7 @@
   margin-right: var(--dl-space-space-twounits);
   margin-bottom: var(--dl-space-space-unit);
 }
-.neuroethics-container06 {
+.neuroethics-container07 {
   width: 100%;
   height: auto;
   display: flex;
@@ -656,7 +703,7 @@
   justify-content: flex-start;
   background-color: #62B6CB;
 }
-.neuroethics-text26 {
+.neuroethics-text44 {
   color: var(--dl-color-gray-white);
   align-self: center;
   margin-top: var(--dl-space-space-twounits);
@@ -669,7 +716,7 @@
   height: 948px;
   margin: var(--dl-space-space-twounits);
 }
-.neuroethics-container07 {
+.neuroethics-container08 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -694,7 +741,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
 }
-.neuroethics-text33 {
+.neuroethics-text51 {
   color: var(--dl-color-gray-black);
   font-size: 24px;
   font-style: normal;
@@ -711,7 +758,7 @@
   padding-bottom: var(--dl-space-space-threeunits);
   justify-content: space-between;
 }
-.neuroethics-container08 {
+.neuroethics-container09 {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -719,7 +766,7 @@
   align-items: space-between;
   flex-direction: column;
 }
-.neuroethics-container09 {
+.neuroethics-container10 {
   display: flex;
   align-items: center;
   margin-right: var(--dl-space-space-twounits);
@@ -738,7 +785,7 @@
 .neuroethics-blog-post-card2:hover {
   transform: scale(1.02);
 }
-.neuroethics-link2 {
+.neuroethics-link3 {
   display: contents;
 }
 .neuroethics-image3 {
@@ -752,7 +799,7 @@
   margin-bottom: 0px;
   text-decoration: none;
 }
-.neuroethics-container10 {
+.neuroethics-container11 {
   display: flex;
   align-items: center;
   margin-right: var(--dl-space-space-twounits);
@@ -771,7 +818,7 @@
 .neuroethics-blog-post-card3:hover {
   transform: scale(1.02);
 }
-.neuroethics-link3 {
+.neuroethics-link4 {
   display: contents;
 }
 .neuroethics-image4 {
@@ -781,7 +828,7 @@
   margin-right: 60px;
   text-decoration: none;
 }
-.neuroethics-container11 {
+.neuroethics-container12 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -799,7 +846,7 @@
 .neuroethics-blog-post-card4:hover {
   transform: scale(1.02);
 }
-.neuroethics-link4 {
+.neuroethics-link5 {
   display: contents;
 }
 .neuroethics-image5 {
@@ -828,7 +875,7 @@
   border-left-width: 0px;
   border-right-width: 0px;
 }
-.neuroethics-container12 {
+.neuroethics-container13 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -842,7 +889,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.neuroethics-link5 {
+.neuroethics-link6 {
   display: contents;
 }
 .neuroethics-icon08 {
@@ -851,7 +898,7 @@
   margin-right: var(--dl-space-space-twounits);
   text-decoration: none;
 }
-.neuroethics-link6 {
+.neuroethics-link7 {
   display: contents;
 }
 .neuroethics-icon10 {
@@ -860,7 +907,7 @@
   margin-right: var(--dl-space-space-twounits);
   text-decoration: none;
 }
-.neuroethics-link7 {
+.neuroethics-link8 {
   display: contents;
 }
 .neuroethics-icon12 {
@@ -878,33 +925,33 @@
   .neuroethics-icon04 {
     fill: #D9D9D9;
   }
-  .neuroethics-container02 {
+  .neuroethics-container03 {
     height: auto;
   }
 }
 @media(max-width: 991px) {
-  .neuroethics-container02 {
+  .neuroethics-container03 {
     height: auto;
   }
   .neuroethics-blog {
     flex-direction: column;
   }
-  .neuroethics-container03 {
+  .neuroethics-container04 {
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .neuroethics-container04 {
+  .neuroethics-container05 {
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-threeunits);
   }
   .neuroethics-blog1 {
     flex-direction: column;
   }
-  .neuroethics-container09 {
+  .neuroethics-container10 {
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .neuroethics-container10 {
+  .neuroethics-container11 {
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-threeunits);
   }
@@ -954,7 +1001,7 @@
     align-self: center;
     text-align: center;
   }
-  .neuroethics-container02 {
+  .neuroethics-container03 {
     height: auto;
   }
   .neuroethics-blog {
@@ -983,12 +1030,12 @@
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .neuroethics-container12 {
+  .neuroethics-container13 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  .neuroethics-text36 {
+  .neuroethics-text54 {
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
@@ -1003,7 +1050,7 @@
   .neuroethics-container01 {
     height: 131px;
   }
-  .neuroethics-container02 {
+  .neuroethics-container03 {
     height: auto;
   }
   .neuroethics-blog {
@@ -1037,12 +1084,12 @@
     margin-top: var(--dl-space-space-oneandhalfunits);
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .neuroethics-container12 {
+  .neuroethics-container13 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  .neuroethics-text36 {
+  .neuroethics-text54 {
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
