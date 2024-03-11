@@ -13,6 +13,7 @@
     <meta property="og:title" content="Chapters - IYNA" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -189,7 +190,7 @@
                         data-thq="thq-dropdown-toggle"
                         class="chapters-dropdown-toggle01"
                       >
-                        <span class="chapters-text003">Submissions</span>
+                        <span class="chapters-text03">Submissions</span>
                       </div>
                     </a>
                   </li>
@@ -202,7 +203,7 @@
                         data-thq="thq-dropdown-toggle"
                         class="chapters-dropdown-toggle02"
                       >
-                        <span class="chapters-text004">Published Issues</span>
+                        <span class="chapters-text04">Published Issues</span>
                       </div>
                     </a>
                   </li>
@@ -246,7 +247,7 @@
                         data-thq="thq-dropdown-toggle"
                         class="chapters-dropdown-toggle04"
                       >
-                        <span class="chapters-text005">
+                        <span class="chapters-text05">
                           Neuroscience Summer Program
                         </span>
                       </div>
@@ -265,7 +266,7 @@
                         data-thq="thq-dropdown-toggle"
                         class="chapters-dropdown-toggle05"
                       >
-                        <span class="chapters-text006">
+                        <span class="chapters-text06">
                           Ideathon Competition
                         </span>
                       </div>
@@ -276,7 +277,7 @@
                       data-thq="thq-dropdown-toggle"
                       class="chapters-dropdown-toggle06"
                     >
-                      <span class="chapters-text007">Brain Bee Bootcamp</span>
+                      <span class="chapters-text07">Brain Bee Bootcamp</span>
                     </div>
                   </a>
                   <a href="surgery.html">
@@ -284,7 +285,7 @@
                       data-thq="thq-dropdown-toggle"
                       class="chapters-dropdown-toggle07"
                     >
-                      <span class="chapters-text008">Neurosurgery Series</span>
+                      <span class="chapters-text08">Neurosurgery Series</span>
                     </div>
                   </a>
                   <a href="journal-club.html">
@@ -292,9 +293,7 @@
                       data-thq="thq-dropdown-toggle"
                       class="chapters-dropdown-toggle08"
                     >
-                      <span class="chapters-text009">
-                        Research Journal Club
-                      </span>
+                      <span class="chapters-text09">Research Journal Club</span>
                     </div>
                   </a>
                   <a href="neuroethics.html">
@@ -302,7 +301,7 @@
                       data-thq="thq-dropdown-toggle"
                       class="chapters-dropdown-toggle09"
                     >
-                      <span class="chapters-text010">
+                      <span class="chapters-text10">
                         IYNA-INS Neuroethics Essay Competition
                       </span>
                     </div>
@@ -374,9 +373,9 @@
                 class="chapters-lottie-node"
               ></lottie-player>
               <div class="chapters-container03">
-                <h1 class="chapters-text011">Chapters</h1>
-                <span class="chapters-text012">
-                  <span class="chapters-text013">
+                <h1 class="chapters-text11">Chapters</h1>
+                <span class="chapters-text12">
+                  <span class="chapters-text13">
                     An IYNA Chapter is a self-governing group of students
                     generally based at schools or local communities. Any
                     community that actively engages with neuroscience is
@@ -536,6 +535,7 @@
                       <div id="topChapter"></div>
                       <div id="chapterInfo">
                         <div id="chapterID"></div>
+                        <div id="chapterLEDBY"></div>
                       </div>
                       <div id="divider"></div>
                       <h1 style="text-align: center;">Rankings</h1>
@@ -547,7 +547,6 @@
                     <script>
                       // URL to your Google Sheets document
                       const googleSheetsUrl1 = 'https://docs.google.com/spreadsheets/d/1xaVpfD4CuM3qYyxMqWpNWs7CIcLENZFDb5pGh1AYzNk/gviz/tq?tqx=out:json';
-
                       // Fetch data from Google Sheets
                       fetch(googleSheetsUrl1)
                           .then(response => response.text())
@@ -566,17 +565,21 @@
                                   let topChapter;
 
                                   // Display information from the second row for 'Chapter of the Season'
-                                  const [topChapterSchool, pointss, topChapterName] = rows[0].c;
+                                  const [one,two,three,four,five,ID_i,School_i,Director_i] = rows[0].c;
 
                                   // Display the chapter with the most points as a header
-                                  if (topChapterName && topChapterSchool) {
+                                  if (ID_i && School_i) {
                                       const topChapterElement = document.getElementById('topChapter');
-                                      topChapterElement.innerHTML = `Chapter of the Season: ${topChapterName.v}`;
+                                      topChapterElement.innerHTML = `Chapter of the Season: ${School_i.v}`;
 
                                       // Display Chapter ID from the data
                                       const chapterIDElement = document.getElementById('chapterID');
 
-                                      chapterIDElement.innerHTML = `${topChapterSchool.v}`;
+                                      chapterIDElement.innerHTML = `${ID_i.v}`;
+
+                                      const chapterIDElement1 = document.getElementById('chapterLEDBY');
+
+                                      chapterIDElement1.innerHTML = `${'Led by: ' + Director_i.v}`;
                                   }
 
                                   // Display the rest of the data
@@ -619,220 +622,107 @@
           <div class="chapters-container12"></div>
         </div>
         <div class="chapters-container13">
-          <h1 class="chapters-text019">
+          <h1 class="chapters-text19">
             <span>Chapter Point Activities</span>
             <br />
           </h1>
         </div>
-        <div class="chapters-blog">
-          <div class="chapters-container14">
-            <div class="chapters-blog-post-card">
-              <div class="chapters-container15">
-                <span class="chapters-text022">CODE: 0001</span>
-                <span class="chapters-text023">
-                  <span class="chapters-text024">[TASK]</span>
-                  <span>
-                    Post about your new Chapter on your social media accounts!
-                    Don't forget to include the link to our website
-                    (https://www.youthneuro.org/chapters) and encourage others
-                    to join IYNA!
-                  </span>
-                  <br />
-                  <br />
-                  <span class="chapters-text028">[DEADLINE]</span>
-                  <span>None</span>
-                  <br class="chapters-text030" />
-                  <br class="chapters-text031" />
-                  <span class="chapters-text032">[REWARD]</span>
-                  <span>10 points (can be redeemed once per season)</span>
-                  <br />
-                  <br />
-                  <span class="chapters-text036">
-                    Submit evidence here once complete:
-                  </span>
-                  <span>https://forms.gle/cazmv96c63C2zSx36</span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="chapters-container16">
-            <div class="chapters-blog-post-card1">
-              <div class="chapters-container17">
-                <span class="chapters-text038">CODE: 0002</span>
-                <span class="chapters-text039">
-                  <span class="chapters-text040">[TASK]</span>
-                  <span>Include your ChapterID in your display name!</span>
-                  <br />
-                  <br />
-                  <span class="chapters-text044">[DEADLINE]</span>
-                  <span>None</span>
-                  <br class="chapters-text046" />
-                  <br class="chapters-text047" />
-                  <span class="chapters-text048">[REWARD]</span>
-                  <span>2 points</span>
-                  <br />
-                  <br class="chapters-text051" />
-                  <span class="chapters-text052">
-                    Submit evidence here once complete:
-                  </span>
-                  <span>https://forms.gle/cazmv96c63C2zSx36</span>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="chapters-container18">
-            <div class="chapters-blog-post-card2">
-              <div class="chapters-container19">
-                <span class="chapters-text059">CODE 0003</span>
-                <span class="chapters-text060">
-                  <span class="chapters-text061">[TASK]</span>
-                  <span>
-                    Like our latest post
-                    (https://www.instagram.com/p/CyOuY2WRxxK/) and comment your
-                    favorite Nobel Prize!
-                  </span>
-                  <br />
-                  <br />
-                  <span class="chapters-text065">[DEADLINE]</span>
-                  <span>December 1st</span>
-                  <br />
-                  <br />
-                  <span class="chapters-text069">[REWARD]</span>
-                  <span>5 points</span>
-                  <br />
-                  <br />
-                  <span class="chapters-text073">
-                    Submit evidence here once complete:
-                  </span>
-                  <span>https://forms.gle/cazmv96c63C2zSx36</span>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="chapters-blog1">
-          <div class="chapters-container20">
-            <div class="chapters-blog-post-card3">
-              <div class="chapters-container21">
-                <span class="chapters-text079">CODE: 0004</span>
-                <span class="chapters-text080">
-                  <span class="chapters-text081">[TASK]</span>
-                  <span>
-                    Register for the IYNA’s Brain Bee Bootcamp and encourage
-                    your peers to do so as well!&nbsp;
-                  </span>
-                  <br />
-                  <br />
-                  <span class="chapters-text085">[DEADLINE]</span>
-                  <span>October 14th, midnight GMT</span>
-                  <br />
-                  <br />
-                  <span class="chapters-text089">[REWARD]</span>
-                  <span>
-                    20 points for each person registered (Make sure to add your
-                    referral code, your ChapterID in the form so that we can
-                    check!)
-                  </span>
-                  <br />
-                  <br />
-                  <span class="chapters-text093">
-                    Submit evidence here once complete:
-                  </span>
-                  <span>https://forms.gle/cazmv96c63C2zSx36</span>
-                  <br />
-                  <br />
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="chapters-container22">
-            <div class="chapters-blog-post-card4">
-              <div class="chapters-container23">
-                <span class="chapters-text097">CODE: 0005</span>
-                <span class="chapters-text098">
-                  <span class="chapters-text099">[TASK]</span>
-                  <span>
-                    Hold your own in-person event/activity for your Chapter!
-                    Feel free to base this off of the activity guides we've
-                    provided you!
-                  </span>
-                  <br />
-                  <br />
-                  <span class="chapters-text103">[DEADLINE]</span>
-                  <span>None</span>
-                  <br />
-                  <br />
-                  <span class="chapters-text107">[REWARD]</span>
-                  <span>
-                    20 points for carrying out the activity and 5 additional
-                    points for each person that attends!(Evidence of this could
-                    be a group photo of you and the attendees! A screenshot of a
-                    presentation could also be one of your pieces of evidence!)
-                  </span>
-                  <br />
-                  <br />
-                  <span class="chapters-text111">
-                    Submit evidence here once complete:
-                  </span>
-                  <span>https://forms.gle/cazmv96c63C2zSx36</span>
-                  <br />
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="chapters-container24">
-            <div class="chapters-blog-post-card5">
-              <div class="chapters-container25">
-                <span class="chapters-text114">CODE 0006</span>
-                <span class="chapters-text115">
-                  <span class="chapters-text116">[TASK]</span>
-                  <span>
-                    Comment either a pumpkin 🎃 or a brain 🧠 emoji to show your
-                    support!
-                    (https://www.instagram.com/p/CyzCrS9RgoL/?igshid=MzRlODBiNWFlZA==)
-                  </span>
-                  <br />
-                  <br />
-                  <span class="chapters-text120">[DEADLINE]</span>
-                  <span>November 5th</span>
-                  <br />
-                  <br />
-                  <span class="chapters-text124">[REWARD]</span>
-                  <span>5 points</span>
-                  <br />
-                  <br />
-                  <span class="chapters-text128">
-                    Submit evidence here once complete:
-                  </span>
-                  <span>https://forms.gle/cazmv96c63C2zSx36</span>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                </span>
-              </div>
-            </div>
+        <div class="chapters-container14">
+          <div class="chapters-container15">
+            <style>
+              body {
+                margin: 0;
+              }
+
+              .container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                grid-gap: 10px;
+                padding: 10px;
+              }
+
+              .rectangle {
+                border: 1px solid black;
+                padding: 10px;
+                margin: 5px;
+                box-sizing: border-box;
+              }
+
+              .rectangle h2 {
+                font-size: 24px;
+                font-weight: bold;
+              }
+
+              @media (max-width: 600px) {
+                .container {
+                  grid-template-columns: 1fr;
+                }
+              }
+            </style>
+
+            <div id="container" class="container"></div>
+
+            <script>
+              var container = document.getElementById('container');
+
+              // Replace this URL with your Google Sheets URL
+              const googleSheetsUrl2 =
+                'https://docs.google.com/spreadsheets/d/1uAIT709PBqGQFXtACpIeSQJ1HrlTJycqs5JSkQexyt4/gviz/tq?tqx=out:json';
+
+              fetch(googleSheetsUrl2)
+                .then((response) => response.text())
+                .then((data) => {
+                  const jsonMatch = data.match(/google\.visualization\.Query\.setResponse\((.*?)\);/);
+                  if (jsonMatch) {
+                    const jsonData = JSON.parse(jsonMatch[1]);
+                    const rows = jsonData.table.rows;
+                    if (rows.length === 0) {
+                      // Display a 'help' message when there is no data
+                      container.innerHTML =
+                        '<p>No data available. Please check again later or contact support for assistance.</p>';
+                    } else {
+                      rows.forEach((row) => {
+                        const [code, task, deadline, reward] = row.c;
+                        var rectangle = document.createElement('div');
+                        rectangle.className = 'rectangle';
+                        rectangle.innerHTML =
+                          '<h2>' +
+                          '' + code.v +
+                          '</h2>' +
+                          '<p>TASK: ' +
+                          task.v +
+                          '</p>' +
+                          '<p>DEADLINE: ' +
+                          deadline.v +
+                          '<p>REWARD: ' +
+                          reward.v +
+                          '</p>';
+                        container.appendChild(rectangle);
+                      });
+                    }
+                  } else {
+                    console.error('Error parsing Google Sheets data.');
+                  }
+                })
+                .catch((error) => {
+                  console.error('Error fetching data:', error);
+
+                  // Display a 'help' message in case of an error
+                  container.innerHTML =
+                    '<p>An error occurred while fetching data. Please try again later or contact support for assistance.</p>';
+                });
+            </script>
           </div>
         </div>
         <footer class="chapters-footer">
-          <span class="chapters-text135">
+          <span class="chapters-text22">
             <br />
             <span>Our Partners</span>
           </span>
-          <div class="chapters-blog2">
-            <div class="chapters-container26">
-              <div class="chapters-container27">
-                <div class="chapters-blog-post-card6">
+          <div class="chapters-blog">
+            <div class="chapters-container16">
+              <div class="chapters-container17">
+                <div class="chapters-blog-post-card">
                   <a
                     href="https://www.thebrainbee.org/"
                     target="_blank"
@@ -848,8 +738,8 @@
                 </div>
               </div>
             </div>
-            <div class="chapters-container28">
-              <div class="chapters-blog-post-card7">
+            <div class="chapters-container18">
+              <div class="chapters-blog-post-card1">
                 <a
                   href="https://www.alz.org/"
                   target="_blank"
@@ -864,8 +754,8 @@
                 </a>
               </div>
             </div>
-            <div class="chapters-container29">
-              <div class="chapters-blog-post-card8">
+            <div class="chapters-container19">
+              <div class="chapters-blog-post-card2">
                 <a
                   href="https://www.neuroethicssociety.org/"
                   target="_blank"
@@ -882,8 +772,8 @@
             </div>
           </div>
           <div class="chapters-separator"></div>
-          <div class="chapters-container30">
-            <span class="chapters-text138">
+          <div class="chapters-container20">
+            <span class="chapters-text25">
               © 2023 International Youth Neuroscience Association, All Rights
               Reserved.
             </span>
