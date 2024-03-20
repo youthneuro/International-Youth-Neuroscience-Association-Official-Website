@@ -1437,6 +1437,12 @@
 .summer-program-text154 {
   font-weight: 700;
 }
+.summer-program-text159 {
+  font-weight: 700;
+}
+.summer-program-text160 {
+  font-weight: 700;
+}
 .summer-program-footer {
   width: 100%;
   display: flex;
@@ -1449,7 +1455,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
 }
-.summer-program-text159 {
+.summer-program-text164 {
   color: var(--dl-color-gray-black);
   font-size: 24px;
   font-style: normal;
@@ -1991,7 +1997,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .summer-program-text162 {
+  .summer-program-text167 {
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
@@ -2168,7 +2174,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .summer-program-text162 {
+  .summer-program-text167 {
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
