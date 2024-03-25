@@ -515,7 +515,7 @@
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
-.events-container1 {
+.events-container01 {
   flex: 0 0 auto;
   width: 100%;
   height: 100px;
@@ -531,7 +531,7 @@
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.events-container2 {
+.events-container02 {
   width: 100%;
   height: auto;
   display: flex;
@@ -705,6 +705,24 @@
   color: var(--dl-color-gray-500);
   align-self: flex-start;
 }
+.events-container03 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0273b1;
+}
+.events-text42 {
+  color: var(--dl-color-gray-white);
+}
+.events-container04 {
+  width: 100%;
+}
+.events-container05 {
+  display: contents;
+}
 .events-footer {
   width: 100%;
   display: flex;
@@ -717,7 +735,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
 }
-.events-text42 {
+.events-text47 {
   color: var(--dl-color-gray-black);
   font-size: 24px;
   font-style: normal;
@@ -734,7 +752,7 @@
   padding-bottom: var(--dl-space-space-threeunits);
   justify-content: space-between;
 }
-.events-container3 {
+.events-container06 {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -742,7 +760,7 @@
   align-items: space-between;
   flex-direction: column;
 }
-.events-container4 {
+.events-container07 {
   display: flex;
   align-items: center;
   margin-right: var(--dl-space-space-twounits);
@@ -775,7 +793,7 @@
   margin-bottom: 0px;
   text-decoration: none;
 }
-.events-container5 {
+.events-container08 {
   display: flex;
   align-items: center;
   margin-right: var(--dl-space-space-twounits);
@@ -804,7 +822,7 @@
   margin-right: 60px;
   text-decoration: none;
 }
-.events-container6 {
+.events-container09 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -851,7 +869,7 @@
   border-left-width: 0px;
   border-right-width: 0px;
 }
-.events-container7 {
+.events-container10 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -901,7 +919,7 @@
   .events-icon04 {
     fill: #D9D9D9;
   }
-  .events-container2 {
+  .events-container02 {
     height: auto;
   }
   .events-text14 {
@@ -923,7 +941,7 @@
   }
 }
 @media(max-width: 991px) {
-  .events-container2 {
+  .events-container02 {
     height: auto;
   }
   .events-text14 {
@@ -940,14 +958,19 @@
     width: 100%;
     height: 407px;
   }
+  .events-container03 {
+    height: auto;
+    margin-bottom: var(--dl-space-space-unit);
+    padding-bottom: 0px;
+  }
   .events-blog {
     flex-direction: column;
   }
-  .events-container4 {
+  .events-container07 {
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .events-container5 {
+  .events-container08 {
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-threeunits);
   }
@@ -988,7 +1011,7 @@
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .events-container1 {
+  .events-container01 {
     height: 130px;
   }
   .events-text11 {
@@ -997,7 +1020,7 @@
     align-self: center;
     text-align: center;
   }
-  .events-container2 {
+  .events-container02 {
     height: auto;
   }
   .events-text14 {
@@ -1050,12 +1073,12 @@
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .events-container7 {
+  .events-container10 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  .events-text45 {
+  .events-text50 {
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
@@ -1067,14 +1090,14 @@
     height: 404px;
     padding: 16px;
   }
-  .events-container1 {
+  .events-container01 {
     height: 131px;
   }
   .events-text11 {
     align-self: center;
     text-align: center;
   }
-  .events-container2 {
+  .events-container02 {
     height: auto;
   }
   .events-text14 {
@@ -1122,12 +1145,12 @@
     margin-top: var(--dl-space-space-oneandhalfunits);
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .events-container7 {
+  .events-container10 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  .events-text45 {
+  .events-text50 {
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }

@@ -10,7 +10,10 @@
       gtag('config', 'G-V87GK324ZH');
     </script>
     <title>Brain-Bee - IYNA</title>
+    <title>Employee Gallery</title>
     <meta property="og:title" content="Brain-Bee - IYNA" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -518,14 +521,187 @@
             </div>
           </div>
         </div>
+        <div class="brain-bee-container11">
+          <h1 class="brain-bee-text38">
+            <br />
+            <span>Behind the Scenes</span>
+            <br />
+            <br />
+          </h1>
+        </div>
+        <div class="brain-bee-container12">
+          <div class="brain-bee-container13">
+            <style>
+              p {
+                text-align: center;
+              }
+              body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f2f2f2;
+              }
+
+              .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-top: 5px;
+              }
+
+              .card {
+                perspective: 1000px;
+                width: calc(25% - 10px); /* Adjust as needed */
+                height: 200px; /* Adjust as needed */
+                margin: 5px;
+                transform-style: preserve-3d; /* Add this line */
+              }
+
+
+              .card-inner {
+                width: 100%;
+                height: 100%;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+              }
+
+
+              .card:hover .card-inner {
+                transform: rotateY(180deg);
+                transform-style: preserve-3d; /* Add this line */
+              }
+
+
+              .card-front,
+              .card-back {
+                width: 100%;
+                height: 100%;
+                position: absolute; /* Corrected */
+                backface-visibility: hidden;
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+              }
+
+
+
+              .card-back {
+                transform: rotateY(180deg);
+                font-size: 1em; /* Regular font size */
+                transition: font-size 0.5s; /* Transition for font size */
+              }
+
+
+              .card:hover .card-back {
+                font-size: 0.8em; /* Adjusted font size on hover */
+              }
+
+
+              .card h2 {
+                color: #333333;
+                font-size: 1.5em;
+                margin-bottom: 10px;
+              }
+
+
+              .card p {
+                color: #666666;
+                font-size: 1em;
+                margin-bottom: 10px;
+                line-height: 1.4;
+              }
+
+
+              /* Media queries for responsiveness */
+              @media screen and (max-width: 1024px) {
+                .card {
+                  width: calc(50% - 10px); /* Adjust width for smaller screens */
+                }
+              }
+
+
+              @media screen and (max-width: 768px) {
+                .card {
+                  width: calc(100% - 10px); /* Adjust width for mobile screens */
+                }
+              }
+            </style>
+
+            <div class="container">
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Roshan Amurthur</h2>
+                    <p>Department: Events</p>
+                    <p>Brain Bee Bootcamp Director</p>
+                  </div>
+                  <div class="card-back">
+                    <p>
+                      Roshan is a sophomore at the Harker School in California.
+                      He hopes to assist and inspire the next generation of
+                      neuroscience students, and make the study of neuroscience
+                      more accessible to all. His roles in the organization
+                      include organizing and executing the neurosurgery webinar
+                      series and the Brain Bee bootcamp. In his free time, he
+                      enjoys reading, debating, and playing basketball.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Madeline Chiang</h2>
+                    <p>Department: Events</p>
+                    <p>BBB Volunteer</p>
+                  </div>
+                  <div class="card-back">
+                    <p>
+                      Madeline is an undergraduate student at the University of
+                      Notre Dame, majoring in Neuroscience and Behavior. She
+                      joined IYNA to empower and inspire youth in the
+                      neuroscience field by increasing accessibility and
+                      awareness. Her role at IYNA includes planning events, such
+                      as Brain Bee Bootcamp and Ideathon, and creating
+                      neuroscience content. During her free time, she enjoys
+                      hiking, baking, traveling, and watching movies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Mahathi Harith</h2>
+                    <p>Department: Events</p>
+                    <p>BBB Volunteer</p>
+                  </div>
+                  <div class="card-back">
+                    <p>...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <footer class="brain-bee-footer">
-          <span class="brain-bee-text38">
+          <span class="brain-bee-text43">
             <br />
             <span>Our Partners</span>
           </span>
           <div class="brain-bee-blog1">
-            <div class="brain-bee-container11">
-              <div class="brain-bee-container12">
+            <div class="brain-bee-container14">
+              <div class="brain-bee-container15">
                 <div class="brain-bee-blog-post-card2">
                   <a
                     href="https://www.thebrainbee.org/"
@@ -542,7 +718,7 @@
                 </div>
               </div>
             </div>
-            <div class="brain-bee-container13">
+            <div class="brain-bee-container16">
               <div class="brain-bee-blog-post-card3">
                 <a
                   href="https://www.alz.org/"
@@ -558,7 +734,7 @@
                 </a>
               </div>
             </div>
-            <div class="brain-bee-container14">
+            <div class="brain-bee-container17">
               <div class="brain-bee-blog-post-card4">
                 <a
                   href="https://www.neuroethicssociety.org/"
@@ -576,8 +752,8 @@
             </div>
           </div>
           <div class="brain-bee-separator"></div>
-          <div class="brain-bee-container15">
-            <span class="brain-bee-text41">
+          <div class="brain-bee-container18">
+            <span class="brain-bee-text46">
               © 2023 International Youth Neuroscience Association, All Rights
               Reserved.
             </span>

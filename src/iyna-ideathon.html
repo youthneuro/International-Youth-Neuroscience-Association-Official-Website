@@ -10,7 +10,10 @@
       gtag('config', 'G-V87GK324ZH');
     </script>
     <title>IYNA-Ideathon - IYNA</title>
+    <title>Employee Gallery</title>
     <meta property="og:title" content="IYNA-Ideathon - IYNA" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -609,6 +612,168 @@
             </div>
           </div>
         </footer>
+        <div class="iyna-ideathon-container10">
+          <h1 class="iyna-ideathon-text56">
+            <br />
+            <span>Behind the Scenes</span>
+            <br />
+            <br />
+          </h1>
+        </div>
+        <div class="iyna-ideathon-container11">
+          <div class="iyna-ideathon-container12">
+            <style>
+              p {
+                text-align: center;
+              }
+              body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f2f2f2;
+              }
+
+              .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-top: 5px;
+              }
+
+              .card {
+                perspective: 1000px;
+                width: calc(25% - 10px); /* Adjust as needed */
+                height: 200px; /* Adjust as needed */
+                margin: 5px;
+                transform-style: preserve-3d; /* Add this line */
+              }
+
+
+              .card-inner {
+                width: 100%;
+                height: 100%;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+              }
+
+
+              .card:hover .card-inner {
+                transform: rotateY(180deg);
+                transform-style: preserve-3d; /* Add this line */
+              }
+
+
+              .card-front,
+              .card-back {
+                width: 100%;
+                height: 100%;
+                position: absolute; /* Corrected */
+                backface-visibility: hidden;
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+              }
+
+
+
+              .card-back {
+                transform: rotateY(180deg);
+                font-size: 1em; /* Regular font size */
+                transition: font-size 0.5s; /* Transition for font size */
+              }
+
+
+              .card:hover .card-back {
+                font-size: 0.8em; /* Adjusted font size on hover */
+              }
+
+
+              .card h2 {
+                color: #333333;
+                font-size: 1.5em;
+                margin-bottom: 10px;
+              }
+
+
+              .card p {
+                color: #666666;
+                font-size: 1em;
+                margin-bottom: 10px;
+                line-height: 1.4;
+              }
+
+
+              /* Media queries for responsiveness */
+              @media screen and (max-width: 1024px) {
+                .card {
+                  width: calc(50% - 10px); /* Adjust width for smaller screens */
+                }
+              }
+
+
+              @media screen and (max-width: 768px) {
+                .card {
+                  width: calc(100% - 10px); /* Adjust width for mobile screens */
+                }
+              }
+            </style>
+
+            <div class="container">
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Aditi Dewangan</h2>
+                    <p>Department: Events</p>
+                    <p>Events Co-Director</p>
+                  </div>
+                  <div class="card-back">
+                    <p>
+                      Aditi is a high school junior in Seattle, Washington.
+                      Through her work in IYNA, she hopes to inspire students in
+                      the field of neuroscience by making events and
+                      competitions more efficient and accessible. Her role
+                      includes liaising with IYNA partner organizations.
+                      Additionally, she reaches out to high schools and
+                      universities to share the IYNA organization so that more
+                      students can access IYNA's resources. In her leisure time,
+                      she enjoys biking and volunteering at her local senior
+                      home.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Soneesh Kothagundla</h2>
+                    <p>Department: Events</p>
+                    <p>Ideathon Lead</p>
+                  </div>
+                  <div class="card-back">
+                    <p>
+                      Soneesh is a sophomore at South Forsyth High School. He is
+                      passionate about research, clinical neuroscience, public
+                      health policy, being an innovative leader, and creating
+                      impact on people. He hopes to one day become a
+                      neurologist, neurosurgoen, or general surgeon.
+                      Furthermore, his passion for neuroscience goes beyond
+                      studying it, which is why he joined the IYNA, to help
+                      increase the access of neuroscience education.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script

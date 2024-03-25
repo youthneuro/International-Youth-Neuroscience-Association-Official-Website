@@ -515,7 +515,7 @@
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
-.social-media-container1 {
+.social-media-container01 {
   flex: 0 0 auto;
   width: 100%;
   height: 100px;
@@ -531,7 +531,7 @@
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.social-media-container2 {
+.social-media-container02 {
   width: 100%;
   height: auto;
   display: flex;
@@ -540,7 +540,7 @@
   justify-content: center;
   background-color: #0f4d6b;
 }
-.social-media-container3 {
+.social-media-container03 {
   width: 100%;
   height: 50%;
   margin: var(--dl-space-space-twounits);
@@ -667,6 +667,24 @@
   font-weight: 600;
   margin-bottom: var(--dl-space-space-halfunit);
 }
+.social-media-container04 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0273b1;
+}
+.social-media-text23 {
+  color: var(--dl-color-gray-white);
+}
+.social-media-container05 {
+  width: 100%;
+}
+.social-media-container06 {
+  display: contents;
+}
 .social-media-footer {
   width: 100%;
   display: flex;
@@ -679,7 +697,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
 }
-.social-media-text23 {
+.social-media-text28 {
   color: var(--dl-color-gray-black);
   font-size: 24px;
   font-style: normal;
@@ -696,7 +714,7 @@
   padding-bottom: var(--dl-space-space-threeunits);
   justify-content: space-between;
 }
-.social-media-container4 {
+.social-media-container07 {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -704,7 +722,7 @@
   align-items: space-between;
   flex-direction: column;
 }
-.social-media-container5 {
+.social-media-container08 {
   display: flex;
   align-items: center;
   margin-right: var(--dl-space-space-twounits);
@@ -737,7 +755,7 @@
   margin-bottom: 0px;
   text-decoration: none;
 }
-.social-media-container6 {
+.social-media-container09 {
   display: flex;
   align-items: center;
   margin-right: var(--dl-space-space-twounits);
@@ -766,7 +784,7 @@
   margin-right: 60px;
   text-decoration: none;
 }
-.social-media-container7 {
+.social-media-container10 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -813,7 +831,7 @@
   border-left-width: 0px;
   border-right-width: 0px;
 }
-.social-media-container8 {
+.social-media-container11 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -875,14 +893,19 @@
   .social-media-gallery {
     grid-template-columns: 1fr 1fr;
   }
+  .social-media-container04 {
+    height: auto;
+    margin-bottom: var(--dl-space-space-unit);
+    padding-bottom: 0px;
+  }
   .social-media-blog {
     flex-direction: column;
   }
-  .social-media-container5 {
+  .social-media-container08 {
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .social-media-container6 {
+  .social-media-container09 {
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-threeunits);
   }
@@ -923,7 +946,7 @@
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .social-media-container1 {
+  .social-media-container01 {
     height: 130px;
   }
   .social-media-text11 {
@@ -970,12 +993,12 @@
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .social-media-container8 {
+  .social-media-container11 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  .social-media-text26 {
+  .social-media-text31 {
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
@@ -987,13 +1010,13 @@
     height: 404px;
     padding: 16px;
   }
-  .social-media-container1 {
+  .social-media-container01 {
     height: 131px;
   }
   .social-media-text11 {
     align-self: center;
   }
-  .social-media-container2 {
+  .social-media-container02 {
     height: auto;
   }
   .social-media-text15 {
@@ -1034,12 +1057,12 @@
     margin-top: var(--dl-space-space-oneandhalfunits);
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .social-media-container8 {
+  .social-media-container11 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  .social-media-text26 {
+  .social-media-text31 {
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }

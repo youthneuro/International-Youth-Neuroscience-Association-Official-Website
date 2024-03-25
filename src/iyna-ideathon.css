@@ -821,6 +821,24 @@
   height: var(--dl-size-size-small);
   text-decoration: none;
 }
+.iyna-ideathon-container10 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0273b1;
+}
+.iyna-ideathon-text56 {
+  color: var(--dl-color-gray-white);
+}
+.iyna-ideathon-container11 {
+  width: 100%;
+}
+.iyna-ideathon-container12 {
+  display: contents;
+}
 @media(max-width: 1200px) {
   .iyna-ideathon-desktop-menu {
     display: none;
@@ -854,6 +872,11 @@
   .iyna-ideathon-container07 {
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-threeunits);
+  }
+  .iyna-ideathon-container10 {
+    height: auto;
+    margin-bottom: var(--dl-space-space-unit);
+    padding-bottom: 0px;
   }
 }
 @media(max-width: 767px) {
