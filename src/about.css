@@ -793,8 +793,8 @@
 }
 @media(max-width: 991px) {
   .about-container02 {
-    height: 671px;
-    margin-bottom: var(--dl-space-space-unit);
+    height: auto;
+    margin: 0px;
     padding-bottom: 0px;
   }
   .about-container04 {
@@ -858,6 +858,9 @@
     width: var(--dl-size-size-maxwidth);
     align-self: center;
     text-align: center;
+  }
+  .about-container02 {
+    height: auto;
   }
   .about-text15 {
     margin-left: var(--dl-space-space-threeunits);
