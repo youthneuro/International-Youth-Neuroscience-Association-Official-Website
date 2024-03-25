@@ -727,10 +727,10 @@
         <div class="chapters-container15">
           <div class="chapters-container16">
             <style>
-              p {
+              .container p {
                 text-align: center;
               }
-              body {
+              .container body {
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
@@ -748,16 +748,15 @@
                 perspective: 1000px;
                 width: calc(25% - 10px); /* Adjust as needed */
                 height: 200px; /* Adjust as needed */
-                 relative;
+                relative;
                 margin: 5px;
                 transform-style: preserve-3d; /* Add this line */
               }
 
-              .card-front,
-              .card-back {
+              .card-front {
                 width: 100%;
                 height: 100%;
-                position: absolute; /* Corrected */
+                position: absolute;
                 backface-visibility: hidden;
                 background-color: #ffffff;
                 display: flex;
@@ -769,18 +768,11 @@
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
               }
 
-
-              .card:hover .card-back {
-                font-size: 0.8em; /* Adjusted font size on hover */
-              }
-
-
               .card h2 {
                 color: #333333;
                 font-size: 1.5em;
                 margin-bottom: 10px;
               }
-
 
               .card p {
                 color: #666666;
@@ -789,14 +781,12 @@
                 line-height: 1.4;
               }
 
-
               /* Media queries for responsiveness */
               @media screen and (max-width: 1024px) {
                 .card {
                   width: calc(50% - 10px); /* Adjust width for smaller screens */
                 }
               }
-
 
               @media screen and (max-width: 768px) {
                 .card {
