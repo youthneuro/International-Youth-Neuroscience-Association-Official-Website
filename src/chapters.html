@@ -634,7 +634,7 @@
                 margin: 0;
               }
 
-              .container {
+              .grid-wrapper {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                 grid-gap: 10px;
@@ -656,16 +656,16 @@
               }
 
               @media (max-width: 600px) {
-                .container {
+                .grid-wrapper {
                   grid-template-columns: 1fr;
                 }
               }
             </style>
 
-            <div id="container" class="container"></div>
+            <div id="grid-wrapper" class="grid-wrapper"></div>
 
             <script>
-              var container = document.getElementById('container');
+              var gridWrapper = document.getElementById('grid-wrapper');
 
               // Replace this URL with your Google Sheets URL
               const googleSheetsUrl2 =
@@ -680,7 +680,7 @@
                     const rows = jsonData.table.rows;
                     if (rows.length === 0) {
                       // Display a 'help' message when there is no data
-                      container.innerHTML =
+                      gridWrapper.innerHTML =
                         '<p>No data available. Please check again later or contact support for assistance.</p>';
                     } else {
                       rows.forEach((row) => {
@@ -699,7 +699,7 @@
                           '<p>REWARD: ' +
                           reward.v +
                           '</p>';
-                        container.appendChild(rectangle);
+                        gridWrapper.appendChild(rectangle);
                       });
                     }
                   } else {
@@ -710,7 +710,7 @@
                   console.error('Error fetching data:', error);
 
                   // Display a 'help' message in case of an error
-                  container.innerHTML =
+                  gridWrapper.innerHTML =
                     '<p>An error occurred while fetching data. Please try again later or contact support for assistance.</p>';
                 });
             </script>
