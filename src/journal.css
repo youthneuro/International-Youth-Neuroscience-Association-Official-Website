@@ -646,7 +646,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--dl-color-primary-300);
+  background-color: #0273b1;
 }
 .journal-text19 {
   color: var(--dl-color-gray-white);
