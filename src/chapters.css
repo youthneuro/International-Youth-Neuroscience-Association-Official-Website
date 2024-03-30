@@ -1008,6 +1008,9 @@
   height: var(--dl-size-size-small);
   text-decoration: none;
 }
+.chapters-container20 {
+  display: contents;
+}
 @media(max-width: 1200px) {
   .chapters-desktop-menu {
     display: none;

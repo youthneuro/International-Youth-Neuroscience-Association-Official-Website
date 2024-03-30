@@ -1154,6 +1154,9 @@
   height: var(--dl-size-size-small);
   text-decoration: none;
 }
+.home-container13 {
+  display: contents;
+}
 @media(max-width: 1200px) {
   .home-desktop-menu {
     display: none;

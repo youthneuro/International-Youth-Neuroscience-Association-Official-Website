@@ -1,4 +1,4 @@
-.journal-container {
+.fundraising-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
 }
-.journal-navbar-interactive {
+.fundraising-navbar-interactive {
   width: 100%;
   height: 70px;
   display: flex;
@@ -18,36 +18,36 @@
   justify-content: space-between;
   background-color: #153446;
 }
-.journal-navlink {
+.fundraising-navlink {
   display: contents;
 }
-.journal-image {
+.fundraising-image {
   height: var(--dl-size-size-small);
   text-decoration: none;
 }
-.journal-desktop-menu {
+.fundraising-desktop-menu {
   flex: 1;
   display: flex;
   justify-content: space-between;
 }
-.journal-links {
+.fundraising-links {
   flex: 1;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
 }
-.journal-text {
+.fundraising-text {
   color: var(--dl-color-gray-white);
   text-decoration: none;
 }
-.journal-thq-dropdown {
+.fundraising-thq-dropdown {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.journal-dropdown-toggle {
+.fundraising-dropdown-toggle {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -59,7 +59,7 @@
   padding-right: 0px;
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.journal-navlink01 {
+.fundraising-navlink01 {
   color: var(--dl-color-gray-white);
   font-size: 16px;
   font-style: normal;
@@ -69,16 +69,16 @@
   vertical-align: middle;
   text-decoration: none;
 }
-.journal-dropdown-arrow {
+.fundraising-dropdown-arrow {
   transition: 0.3s;
 }
-.journal-icon {
+.fundraising-icon {
   fill: var(--dl-color-gray-white);
   width: 18px;
   height: 18px;
   transition: 0.3s;
 }
-.journal-dropdown-list {
+.fundraising-dropdown-list {
   left: 0%;
   width: max-content;
   display: none;
@@ -95,13 +95,13 @@
   background-color: var(--dl-color-gray-white);
   list-style-position: inside;
 }
-.journal-dropdown {
+.fundraising-dropdown {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.journal-dropdown-toggle01 {
+.fundraising-dropdown-toggle01 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -115,12 +115,12 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.journal-dropdown-toggle01:hover {
+.fundraising-dropdown-toggle01:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
 }
-.journal-text03 {
+.fundraising-text03 {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -128,13 +128,13 @@
   font-style: normal;
   font-weight: 500;
 }
-.journal-dropdown1 {
+.fundraising-dropdown1 {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.journal-dropdown-toggle02 {
+.fundraising-dropdown-toggle02 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -148,12 +148,12 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.journal-dropdown-toggle02:hover {
+.fundraising-dropdown-toggle02:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
 }
-.journal-text04 {
+.fundraising-text04 {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -161,24 +161,24 @@
   font-style: normal;
   font-weight: 500;
 }
-.journal-dropdown2 {
+.fundraising-dropdown2 {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.journal-navlink04 {
+.fundraising-navlink04 {
   color: var(--dl-color-gray-white);
   margin-left: var(--dl-space-space-oneandhalfunits);
   text-decoration: none;
 }
-.journal-thq-dropdown1 {
+.fundraising-thq-dropdown1 {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.journal-dropdown-toggle03 {
+.fundraising-dropdown-toggle03 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -190,7 +190,7 @@
   padding-right: 0px;
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.journal-navlink05 {
+.fundraising-navlink05 {
   color: var(--dl-color-gray-white);
   font-size: 16px;
   font-style: normal;
@@ -200,16 +200,16 @@
   vertical-align: middle;
   text-decoration: none;
 }
-.journal-dropdown-arrow1 {
+.fundraising-dropdown-arrow1 {
   transition: 0.3s;
 }
-.journal-icon02 {
+.fundraising-icon02 {
   fill: var(--dl-color-gray-white);
   width: 18px;
   height: 18px;
   transition: 0.3s;
 }
-.journal-dropdown-list1 {
+.fundraising-dropdown-list1 {
   left: 0%;
   width: max-content;
   display: none;
@@ -226,13 +226,13 @@
   background-color: var(--dl-color-gray-white);
   list-style-position: inside;
 }
-.journal-dropdown3 {
+.fundraising-dropdown3 {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.journal-dropdown-toggle04 {
+.fundraising-dropdown-toggle04 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -246,12 +246,12 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.journal-dropdown-toggle04:hover {
+.fundraising-dropdown-toggle04:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
 }
-.journal-text05 {
+.fundraising-text05 {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -259,19 +259,19 @@
   font-style: normal;
   font-weight: 500;
 }
-.journal-dropdown4 {
+.fundraising-dropdown4 {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.journal-dropdown5 {
+.fundraising-dropdown5 {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.journal-dropdown-toggle05 {
+.fundraising-dropdown-toggle05 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -285,12 +285,12 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.journal-dropdown-toggle05:hover {
+.fundraising-dropdown-toggle05:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
 }
-.journal-text06 {
+.fundraising-text06 {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -298,7 +298,7 @@
   font-style: normal;
   font-weight: 500;
 }
-.journal-dropdown-toggle06 {
+.fundraising-dropdown-toggle06 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -312,12 +312,12 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.journal-dropdown-toggle06:hover {
+.fundraising-dropdown-toggle06:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
 }
-.journal-text07 {
+.fundraising-text07 {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -325,7 +325,7 @@
   font-style: normal;
   font-weight: 500;
 }
-.journal-dropdown-toggle07 {
+.fundraising-dropdown-toggle07 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -339,12 +339,12 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.journal-dropdown-toggle07:hover {
+.fundraising-dropdown-toggle07:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
 }
-.journal-text08 {
+.fundraising-text08 {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -352,7 +352,7 @@
   font-style: normal;
   font-weight: 500;
 }
-.journal-dropdown-toggle08 {
+.fundraising-dropdown-toggle08 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -366,12 +366,12 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.journal-dropdown-toggle08:hover {
+.fundraising-dropdown-toggle08:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
 }
-.journal-text09 {
+.fundraising-text09 {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -379,7 +379,7 @@
   font-style: normal;
   font-weight: 500;
 }
-.journal-dropdown-toggle09 {
+.fundraising-dropdown-toggle09 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -393,12 +393,12 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.journal-dropdown-toggle09:hover {
+.fundraising-dropdown-toggle09:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
 }
-.journal-text10 {
+.fundraising-text10 {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -406,23 +406,23 @@
   font-style: normal;
   font-weight: 500;
 }
-.journal-navlink12 {
+.fundraising-navlink12 {
   color: var(--dl-color-gray-white);
   margin-left: var(--dl-space-space-oneandhalfunits);
   text-decoration: none;
 }
-.journal-navlink13 {
+.fundraising-navlink13 {
   color: var(--dl-color-gray-white);
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
 }
-.journal-thq-dropdown2 {
+.fundraising-thq-dropdown2 {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.journal-dropdown-toggle10 {
+.fundraising-dropdown-toggle10 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -434,7 +434,7 @@
   padding-right: 0px;
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.journal-navlink14 {
+.fundraising-navlink14 {
   color: var(--dl-color-gray-white);
   font-size: 16px;
   font-style: normal;
@@ -444,16 +444,16 @@
   vertical-align: middle;
   text-decoration: none;
 }
-.journal-dropdown-arrow2 {
+.fundraising-dropdown-arrow2 {
   transition: 0.3s;
 }
-.journal-icon04 {
+.fundraising-icon04 {
   fill: var(--dl-color-gray-white);
   width: 18px;
   height: 18px;
   transition: 0.3s;
 }
-.journal-dropdown-list2 {
+.fundraising-dropdown-list2 {
   left: 0%;
   width: max-content;
   display: none;
@@ -470,13 +470,13 @@
   background-color: var(--dl-color-gray-white);
   list-style-position: inside;
 }
-.journal-dropdown6 {
+.fundraising-dropdown6 {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.journal-dropdown-toggle11 {
+.fundraising-dropdown-toggle11 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -490,12 +490,12 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.journal-dropdown-toggle11:hover {
+.fundraising-dropdown-toggle11:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
 }
-.journal-text11 {
+.fundraising-text11 {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -503,19 +503,19 @@
   font-style: normal;
   font-weight: 500;
 }
-.journal-dropdown7 {
+.fundraising-dropdown7 {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.journal-dropdown8 {
+.fundraising-dropdown8 {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.journal-dropdown-toggle12 {
+.fundraising-dropdown-toggle12 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -529,12 +529,12 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.journal-dropdown-toggle12:hover {
+.fundraising-dropdown-toggle12:hover {
   fill: #fff;
   color: #fff;
   background-color: #595959;
 }
-.journal-text12 {
+.fundraising-text12 {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -542,25 +542,25 @@
   font-style: normal;
   font-weight: 500;
 }
-.journal-buttons {
+.fundraising-buttons {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-.journal-register {
+.fundraising-register {
   color: var(--dl-color-gray-white);
   text-decoration: none;
   background-color: #102632;
 }
-.journal-burger-menu {
+.fundraising-burger-menu {
   display: none;
 }
-.journal-icon06 {
+.fundraising-icon06 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
-.journal-mobile-menu {
+.fundraising-mobile-menu {
   top: 0px;
   left: 0px;
   width: 100%;
@@ -573,70 +573,70 @@
   justify-content: space-between;
   background-color: #fff;
 }
-.journal-nav {
+.fundraising-nav {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.journal-top {
+.fundraising-top {
   width: 100%;
   display: flex;
   align-items: center;
   margin-bottom: var(--dl-space-space-threeunits);
   justify-content: space-between;
 }
-.journal-navlink17 {
+.fundraising-navlink17 {
   display: contents;
 }
-.journal-logo {
+.fundraising-logo {
   height: 2rem;
   text-decoration: none;
 }
-.journal-close-menu {
+.fundraising-close-menu {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.journal-icon08 {
+.fundraising-icon08 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
-.journal-links1 {
+.fundraising-links1 {
   flex: 0 0 auto;
   display: flex;
   align-self: flex-start;
   align-items: flex-start;
   flex-direction: column;
 }
-.journal-navlink18 {
+.fundraising-navlink18 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
-.journal-navlink19 {
+.fundraising-navlink19 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
-.journal-navlink20 {
+.fundraising-navlink20 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
-.journal-navlink21 {
+.fundraising-navlink21 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
-.journal-navlink22 {
+.fundraising-navlink22 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
-.journal-navlink23 {
+.fundraising-navlink23 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
-.journal-navlink24 {
+.fundraising-navlink24 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
-.journal-container01 {
+.fundraising-container01 {
   flex: 0 0 auto;
   width: 100%;
   height: 100px;
@@ -645,139 +645,164 @@
   justify-content: center;
   background-color: #2c5775;
 }
-.journal-text13 {
+.fundraising-text13 {
   color: rgb(255, 255, 255);
   align-self: center;
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.journal-container02 {
+.fundraising-container02 {
   width: 100%;
-  height: 1211px;
+  height: auto;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   background-color: #0f4d6b;
 }
-.journal-hero {
-  width: 100%;
-  display: flex;
-  padding: var(--dl-space-space-threeunits);
-  max-width: var(--dl-size-size-maxwidth);
-  min-height: 80vh;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.journal-container03 {
-  flex: 0 0 auto;
-  width: 400px;
-  height: auto;
-  display: flex;
-  align-items: space-between;
-  flex-direction: column;
-  justify-content: center;
-}
-.journal-text16 {
+.fundraising-text16 {
   color: var(--dl-color-gray-white);
-  font-size: 3rem;
-  max-width: 450px;
-}
-.journal-container04 {
-  flex: 0 0 auto;
-  width: 400px;
-  height: auto;
-  display: flex;
-  align-items: space-between;
-  flex-direction: column;
-}
-.journal-text17 {
-  color: #CAE9FF;
-  width: 400px;
   align-self: center;
   margin-top: var(--dl-space-space-twounits);
+}
+.fundraising-text19 {
+  color: rgb(202, 233, 255);
+  margin: var(--dl-space-space-twounits);
+  font-size: 20px;
+  align-self: center;
   text-align: center;
-  margin-bottom: var(--dl-space-space-twounits);
 }
-.journal-text19 {
-  font-weight: 700;
-}
-.journal-btn-group {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-.journal-navlink25 {
-  color: var(--dl-color-gray-white);
-  transition: 0.3s;
-  padding-top: var(--dl-space-space-unit);
-  padding-left: var(--dl-space-space-twounits);
-  padding-right: var(--dl-space-space-twounits);
-  padding-bottom: var(--dl-space-space-unit);
-  text-decoration: none;
-  background-color: rgb(16, 38, 50);
-}
-.journal-navlink25:hover {
-  color: var(--dl-color-gray-white);
-  background-color: var(--dl-color-gray-black);
-}
-.journal-navlink26 {
-  color: var(--dl-color-gray-white);
+.fundraising-link {
+  color: rgb(255, 255, 255);
+  margin-top: 0px;
   transition: 0.3s;
   margin-left: var(--dl-space-space-unit);
   padding-top: var(--dl-space-space-unit);
-  border-color: var(--dl-color-gray-black);
-  border-style: solid;
+  margin-right: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-threeunits);
   padding-right: var(--dl-space-space-twounits);
   padding-bottom: var(--dl-space-space-unit);
   text-decoration: none;
   background-color: rgb(16, 38, 50);
 }
-.journal-navlink26:hover {
-  border-color: var(--dl-color-gray-black);
+.fundraising-link:hover {
+  transform: scale(1.02);
 }
-.journal-container05 {
-  display: flex;
-  margin-right: var(--dl-space-space-threeunits);
-  padding-right: var(--dl-space-space-threeunits);
-  flex-direction: column;
-}
-.journal-container06 {
-  flex: 0 0 auto;
-  width: auto;
-  height: 986px;
-  display: flex;
-  align-items: flex-start;
-}
-.journal-container07 {
-  width: 745px;
-  height: auto;
-  margin: var(--dl-space-space-unit);
-  align-self: center;
-}
-.journal-container08 {
-  display: contents;
-}
-.journal-container09 {
+.fundraising-container03 {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #0273b1;
 }
-.journal-text21 {
+.fundraising-text21 {
   color: var(--dl-color-gray-white);
+  align-self: center;
+  margin-top: var(--dl-space-space-twounits);
 }
-.journal-container10 {
+.fundraising-text24 {
+  color: rgb(202, 233, 255);
+  font-size: 20px;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  text-align: center;
+  margin-left: var(--dl-space-space-twounits);
+  margin-right: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.fundraising-link1 {
+  color: rgb(255, 255, 255);
+  margin-top: var(--dl-space-space-unit);
+  transition: 0.3s;
+  margin-left: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(16, 38, 50);
+}
+.fundraising-link1:hover {
+  transform: scale(1.02);
+}
+.fundraising-container04 {
   width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--dl-color-gray-white);
 }
-.journal-container11 {
-  display: contents;
+.fundraising-text25 {
+  color: #000000;
+  align-self: center;
+  margin-top: var(--dl-space-space-twounits);
 }
-.journal-footer {
+.fundraising-text28 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  text-align: center;
+  margin-left: var(--dl-space-space-twounits);
+  margin-right: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.fundraising-link2 {
+  color: rgb(255, 255, 255);
+  margin-top: var(--dl-space-space-unit);
+  transition: 0.3s;
+  margin-left: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: rgb(16, 38, 50);
+}
+.fundraising-link2:hover {
+  transform: scale(1.02);
+}
+.fundraising-hero {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  min-height: 80vh;
+  align-items: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  flex-direction: row;
+  padding-bottom: 300px;
+  justify-content: space-between;
+}
+.fundraising-image1 {
+  width: 570px;
+  height: auto;
+  object-fit: cover;
+}
+.fundraising-image2 {
+  width: 570px;
+  object-fit: cover;
+}
+.fundraising-container05 {
+  flex: 0 0 auto;
+  width: auto;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.fundraising-footer {
   width: 100%;
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
@@ -789,13 +814,13 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
 }
-.journal-text26 {
+.fundraising-text31 {
   color: var(--dl-color-gray-black);
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
 }
-.journal-blog {
+.fundraising-blog {
   width: 100%;
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
@@ -806,7 +831,7 @@
   padding-bottom: var(--dl-space-space-threeunits);
   justify-content: space-between;
 }
-.journal-container12 {
+.fundraising-container06 {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -814,13 +839,13 @@
   align-items: space-between;
   flex-direction: column;
 }
-.journal-container13 {
+.fundraising-container07 {
   display: flex;
   align-items: center;
   margin-right: var(--dl-space-space-twounits);
   justify-content: space-between;
 }
-.journal-blog-post-card {
+.fundraising-blog-post-card {
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -830,13 +855,13 @@
   flex-direction: column;
   justify-content: center;
 }
-.journal-blog-post-card:hover {
+.fundraising-blog-post-card:hover {
   transform: scale(1.02);
 }
-.journal-link {
+.fundraising-link3 {
   display: contents;
 }
-.journal-image1 {
+.fundraising-image3 {
   width: 188px;
   height: 83px;
   object-fit: cover;
@@ -847,13 +872,13 @@
   margin-bottom: 0px;
   text-decoration: none;
 }
-.journal-container14 {
+.fundraising-container08 {
   display: flex;
   align-items: center;
   margin-right: var(--dl-space-space-twounits);
   justify-content: space-between;
 }
-.journal-blog-post-card1 {
+.fundraising-blog-post-card1 {
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -863,25 +888,25 @@
   flex-direction: column;
   justify-content: center;
 }
-.journal-blog-post-card1:hover {
+.fundraising-blog-post-card1:hover {
   transform: scale(1.02);
 }
-.journal-link1 {
+.fundraising-link4 {
   display: contents;
 }
-.journal-image2 {
+.fundraising-image4 {
   width: 200px;
   object-fit: cover;
   margin-left: 60px;
   margin-right: 60px;
   text-decoration: none;
 }
-.journal-container15 {
+.fundraising-container09 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.journal-blog-post-card2 {
+.fundraising-blog-post-card2 {
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -891,13 +916,13 @@
   flex-direction: column;
   justify-content: center;
 }
-.journal-blog-post-card2:hover {
+.fundraising-blog-post-card2:hover {
   transform: scale(1.02);
 }
-.journal-link2 {
+.fundraising-link5 {
   display: contents;
 }
-.journal-image3 {
+.fundraising-image5 {
   width: 200px;
   object-fit: cover;
   border-color: var(--dl-color-gray-black);
@@ -905,7 +930,7 @@
   border-width: 1px;
   text-decoration: none;
 }
-.journal-separator {
+.fundraising-separator {
   flex: 0 0 auto;
   width: 100%;
   height: 0px;
@@ -923,7 +948,7 @@
   border-left-width: 0px;
   border-right-width: 0px;
 }
-.journal-container16 {
+.fundraising-container10 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -931,235 +956,188 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.journal-icon-group {
+.fundraising-icon-group {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-.journal-link3 {
+.fundraising-link6 {
   display: contents;
 }
-.journal-icon10 {
+.fundraising-icon10 {
   width: var(--dl-size-size-small);
   height: var(--dl-size-size-small);
   margin-right: var(--dl-space-space-twounits);
   text-decoration: none;
 }
-.journal-link4 {
+.fundraising-link7 {
   display: contents;
 }
-.journal-icon12 {
+.fundraising-icon12 {
   width: var(--dl-size-size-small);
   height: var(--dl-size-size-small);
   margin-right: var(--dl-space-space-twounits);
   text-decoration: none;
 }
-.journal-link5 {
+.fundraising-link8 {
   display: contents;
 }
-.journal-icon14 {
+.fundraising-icon14 {
   width: var(--dl-size-size-small);
   height: var(--dl-size-size-small);
   text-decoration: none;
 }
-.journal-container18 {
+.fundraising-container12 {
   display: contents;
 }
 @media(max-width: 1200px) {
-  .journal-desktop-menu {
+  .fundraising-desktop-menu {
     display: none;
   }
-  .journal-burger-menu {
+  .fundraising-burger-menu {
     display: flex;
   }
-  .journal-icon06 {
+  .fundraising-icon06 {
     fill: #D9D9D9;
   }
-  .journal-container07 {
-    width: 681px;
-    height: 983px;
-    align-self: center;
+  .fundraising-container02 {
+    height: auto;
   }
 }
 @media(max-width: 991px) {
-  .journal-container02 {
-    height: 1524px;
-  }
-  .journal-hero {
-    flex-direction: column;
-  }
-  .journal-text16 {
-    text-align: center;
-  }
-  .journal-text17 {
-    text-align: center;
-    padding-left: var(--dl-space-space-threeunits);
-    padding-right: var(--dl-space-space-threeunits);
-  }
-  .journal-container05 {
-    align-items: center;
-    margin-right: 0px;
-    margin-bottom: var(--dl-space-space-twounits);
-    padding-right: 0px;
-  }
-  .journal-container07 {
-    width: 673px;
-    height: 879px;
-    margin: var(--dl-space-space-twounits);
-  }
-  .journal-container09 {
+  .fundraising-container02 {
     height: auto;
-    margin-bottom: var(--dl-space-space-unit);
-    padding-bottom: 0px;
   }
-  .journal-blog {
+  .fundraising-hero {
     flex-direction: column;
   }
-  .journal-container13 {
+  .fundraising-blog {
+    flex-direction: column;
+  }
+  .fundraising-container07 {
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .journal-container14 {
+  .fundraising-container08 {
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-threeunits);
   }
 }
 @media(max-width: 767px) {
-  .journal-navbar-interactive {
+  .fundraising-navbar-interactive {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .journal-burger-menu {
+  .fundraising-burger-menu {
     align-items: center;
     justify-content: center;
   }
-  .journal-navlink18 {
+  .fundraising-navlink18 {
     margin-bottom: var(--dl-space-space-unit);
   }
-  .journal-navlink19 {
+  .fundraising-navlink19 {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .journal-navlink20 {
+  .fundraising-navlink20 {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .journal-navlink21 {
+  .fundraising-navlink21 {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .journal-navlink22 {
+  .fundraising-navlink22 {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .journal-navlink23 {
+  .fundraising-navlink23 {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .journal-navlink24 {
+  .fundraising-navlink24 {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .journal-container01 {
+  .fundraising-container01 {
     height: 130px;
   }
-  .journal-text13 {
+  .fundraising-text13 {
     color: rgb(255, 255, 255);
     width: var(--dl-size-size-maxwidth);
     align-self: center;
     text-align: center;
   }
-  .journal-container02 {
-    height: 1468px;
+  .fundraising-container02 {
+    height: auto;
   }
-  .journal-hero {
-    height: 1457px;
+  .fundraising-hero {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .journal-text17 {
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-  }
-  .journal-container07 {
-    width: 635px;
-    height: 827px;
-  }
-  .journal-footer {
+  .fundraising-footer {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .journal-blog {
+  .fundraising-blog {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .journal-separator {
+  .fundraising-separator {
     margin-top: var(--dl-space-space-oneandhalfunits);
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .journal-container16 {
+  .fundraising-container10 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  .journal-text29 {
+  .fundraising-text34 {
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
 @media(max-width: 479px) {
-  .journal-navbar-interactive {
+  .fundraising-navbar-interactive {
     padding: var(--dl-space-space-unit);
   }
-  .journal-mobile-menu {
+  .fundraising-mobile-menu {
     height: 404px;
     padding: 16px;
   }
-  .journal-container01 {
+  .fundraising-container01 {
     height: 131px;
   }
-  .journal-hero {
-    height: 1251px;
+  .fundraising-container02 {
+    height: auto;
+  }
+  .fundraising-hero {
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .journal-btn-group {
-    flex-direction: column;
-  }
-  .journal-navlink26 {
-    margin-top: var(--dl-space-space-unit);
-    margin-left: 0px;
-  }
-  .journal-container05 {
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .journal-container07 {
-    width: 438px;
-    height: 774px;
-  }
-  .journal-footer {
+  .fundraising-footer {
     padding: var(--dl-space-space-unit);
   }
-  .journal-blog {
+  .fundraising-blog {
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .journal-separator {
+  .fundraising-separator {
     margin-top: var(--dl-space-space-oneandhalfunits);
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .journal-container16 {
+  .fundraising-container10 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  .journal-text29 {
+  .fundraising-text34 {
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }

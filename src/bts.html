@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V87GK324ZH"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-V87GK324ZH');
-    </script>
     <title>BTS - IYNA</title>
+    <title>Employee Gallery</title>
+    <title>Employee Gallery</title>
     <meta property="og:title" content="BTS - IYNA" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -1705,8 +1699,10 @@
                 <div class="card-inner">
                   <div class="card-front">
                     <h2>Eesha Oza</h2>
-                    <p>Department: Journal, Chapters, Operations</p>
-                    <p>Senior Editor, Regional Chapter Lead, Fundraising Lead</p>
+                    <p>Department: Operations, Chapters, Journal</p>
+                    <p>
+                      Fundraising Lead, Regional Chapter Lead, Senior Editor
+                    </p>
                   </div>
                   <div class="card-back">
                     <p>
@@ -1732,6 +1728,9 @@
         <div class="bts-container21">
           <div class="bts-container22">
             <style>
+              p {
+                text-align: center;
+              }
               body {
                 margin: 0;
                 padding: 0;
@@ -1749,9 +1748,11 @@
                 perspective: 1000px;
                 width: calc(25% - 10px); /* Adjust as needed */
                 height: 200px; /* Adjust as needed */
-                position: relative;
+                 relative;
                 margin: 5px;
+                transform-style: preserve-3d; /* Add this line */
               }
+
 
               .card-inner {
                 width: 100%;
@@ -1761,11 +1762,17 @@
               }
 
 
+              .card:hover .card-inner {
+                transform: rotateY(180deg);
+                transform-style: preserve-3d; /* Add this line */
+              }
+
+
               .card-front,
               .card-back {
                 width: 100%;
                 height: 100%;
-                position: absolute;
+                position: absolute; /* Corrected */
                 backface-visibility: hidden;
                 background-color: #ffffff;
                 display: flex;
@@ -1776,15 +1783,27 @@
                 border-radius: 10px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
               }
-              .card:hover .card-back {
-                font-size: 0.6em; /* Adjusted font size on hover */
+
+
+
+              .card-back {
+                transform: rotateY(180deg);
+                font-size: 1em; /* Regular font size */
+                transition: font-size 0.5s; /* Transition for font size */
               }
+
+
+              .card:hover .card-back {
+                font-size: 0.8em; /* Adjusted font size on hover */
+              }
+
 
               .card h2 {
                 color: #333333;
                 font-size: 1.5em;
                 margin-bottom: 10px;
               }
+
 
               .card p {
                 color: #666666;
@@ -1793,12 +1812,14 @@
                 line-height: 1.4;
               }
 
+
               /* Media queries for responsiveness */
               @media screen and (max-width: 1024px) {
                 .card {
-                  width: calc(50% - 10px); /* Adjust width for smaller screens */
+                  width: calc(30% - 10px); /* Adjust width for smaller screens */
                 }
               }
+
 
               @media screen and (max-width: 768px) {
                 .card {
@@ -1816,8 +1837,7 @@
                     <p>Senior Editor</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -1830,8 +1850,7 @@
                     <p>Head of Events</p>
                   </div>
                   <div class="card-back">
-                    <p>Ananyaa is a high school senior in Mason, Ohio. She is currently the Head of Events for the IYNA Journal. Through this work, she hopes to create and support more equitable opportunities to participate in the field of neuroscience for high school students and undergraduates. Within the IYNA, she plans events and activities that increase accessibility to the Journal. In her free time, she loves to lift weights and compete in Original Oration. 
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -1844,8 +1863,7 @@
                     <p>Editor-in-Chief</p>
                   </div>
                   <div class="card-back">
-                    <p>Annie is an undergraduate student at The Johns Hopkins University. She's originally from St. Louis, Missouri. She currently serves as the Editor-in-Chief of the International Youth Neuroscience Association Journal where she is in charge of ensuring monthly IYNA issues are released on time and uphold the IYNA standard. In her free time, she enjoys reading and hanging out with friends.
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -1858,8 +1876,7 @@
                     <p>Junior Editor</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -1872,8 +1889,7 @@
                     <p>Journalist</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -1886,8 +1902,7 @@
                     <p>Managing Editor</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -1900,25 +1915,7 @@
                     <p>Translator</p>
                   </div>
                   <div class="card-back">
-                    <p>Brianna is a high school graduate and prospective college student from Peru. She plans to pursue a career in Neuroscience, with a special emphasis on researching neurological disorders. She is a translator for IYNA's journal and a content creator in the Marketing Department. Her all-time favorite food is ceviche, and her preferred music genre is rock.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-inner">
-                  <div class="card-front">
-                    <h2>Eesha Oza</h2>
-                    <p>Department: Fundraising, Journal, Chapters</p>
-                    <p>Fundraising Lead, Senior Editor, Regional Chapter Lead</p>
-                  </div>
-                  <div class="card-back">
-                    <p>Eesha is a high school junior in New Jersey. She is
-                      currently the Fundraising Lead for the IYNA, through which
-                      she organizes fundraisers and works with the grant team to
-                      increase fundraising to further promote IYNA's mission.
-</p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -1931,8 +1928,23 @@
                     <p>Senior Editor</p>
                   </div>
                   <div class="card-back">
-                    <p>...
+                    <p>...</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 16 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Eesha Oza</h2>
+                    <p>Department: Operations, Chapters, Journal</p>
+                    <p>
+                      Fundraising Lead, Regional Chapter Lead, Senior Editor
                     </p>
+                  </div>
+                  <div class="card-back">
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -1945,8 +1957,7 @@
                     <p>Journalist</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -1959,8 +1970,7 @@
                     <p>Junior Editor</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -1973,8 +1983,7 @@
                     <p>Head of Assembly</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -1987,8 +1996,7 @@
                     <p>Senior Editor</p>
                   </div>
                   <div class="card-back">
-                    <p>Irene is a high school junior from Vancouver, BC, Canada. She is most intrigued by neurodegenerative disorders and the integration of A.I into science. Through her work in the IYNA, she hopes to inspire others to further explore the fascinating and ever-growing field of neuroscience. With a background in the arts, Irene is also a competitive company dancer, with her favourite styles being lyrical and ballet. In her free time, she can be found baking or going on outdoor adventures with her dog and family.
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2001,8 +2009,7 @@
                     <p>Journalist</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2015,8 +2022,7 @@
                     <p>Head of Recruitment</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2029,8 +2035,7 @@
                     <p>Junior Editor</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2043,8 +2048,7 @@
                     <p>Operations Lead/Head of Journalists</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2057,8 +2061,7 @@
                     <p>Senior Editor</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2071,8 +2074,7 @@
                     <p>Junior Editor</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2085,8 +2087,7 @@
                     <p>Junior Editor</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2099,8 +2100,7 @@
                     <p>Junior Editor</p>
                   </div>
                   <div class="card-back">
-                    <p>Youlan is a high school sophomore in Canada. She is intrigued by neuroscience, specifically neural circuits and neurogenesis, and hopes to study neuroscience at university. In IYNA, she provides feedback to the submitted essays from student authors and helps put together the Journal. She is also a cellist, writer, musical lover, and badminton player.
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2113,8 +2113,7 @@
                     <p>Translator</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2127,8 +2126,7 @@
                     <p>Translator</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2141,8 +2139,7 @@
                     <p>Translator</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2155,8 +2152,7 @@
                     <p>Translator</p>
                   </div>
                   <div class="card-back">
-                    <p>Ipshita is a high school senior at National Public School, Indiranagar in India. At IYNA, she assists with translation of articles to make the website more accessible for everyone 
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2169,8 +2165,7 @@
                     <p>Translator</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2183,8 +2178,7 @@
                     <p>Translator</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2197,8 +2191,7 @@
                     <p>Junior Editor</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2211,8 +2204,7 @@
                     <p>Journalist</p>
                   </div>
                   <div class="card-back">
-                    <p>...
-                    </p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2234,6 +2226,7 @@
                 text-align: center;
               }
               body {
+                font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
                 background-color: #f2f2f2;
@@ -2414,15 +2407,11 @@
                   <div class="card-front">
                     <h2>Eesha Oza</h2>
                     <p><b>Northeast USA</b></p>
-                    <p>Department: Fundraising, Journal, Chapters</p>
-                    <p>Fundraising Lead, Senior Editor, Regional Chapter Lead</p>
+                    <p>Department: Chapters, Fundraising</p>
+                    <p>Regional Chapter Lead, Fundraising Lead</p>
                   </div>
                   <div class="card-back">
-                    <p>Eesha is a high school junior in New Jersey. She is
-                      currently the Fundraising Lead for the IYNA, through which
-                      she organizes fundraisers and works with the grant team to
-                      increase fundraising to further promote IYNA's mission.
-</p>
+                    <p>...</p>
                   </div>
                 </div>
               </div>
@@ -2532,6 +2521,21 @@
             </div>
           </div>
         </footer>
+        <div>
+          <div class="bts-container32">
+            <script
+              async=""
+              src="https://www.googletagmanager.com/gtag/js?id=G-V87GK324ZH"
+            ></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-V87GK324ZH');
+            </script>
+          </div>
+        </div>
       </div>
     </div>
     <script
