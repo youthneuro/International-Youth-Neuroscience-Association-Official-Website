@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <title>IYNA-Ideathon - IYNA</title>
+    <title>Image Slider</title>
     <meta property="og:title" content="IYNA-Ideathon - IYNA" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -26,6 +29,7 @@
         color: var(--dl-color-gray-black);
         background-color: var(--dl-color-gray-white);
 
+        null
       }
     </style>
     <link
@@ -503,15 +507,119 @@
         <div class="iyna-ideathon-container04">
           <h1>
             <br />
+            <span>2024 Winners</span>
+            <br />
+          </h1>
+          <span class="iyna-ideathon-text38">
+            <span class="iyna-ideathon-text39">CLINICAL SCIENCE</span>
+            <br />
+            <br />
+            <span>1st: Rutvi Vaja and Kakshil Vaja</span>
+            <br />
+            <br />
+            <span>
+              2nd:&nbsp;Kairavi Unarkat, Malhar Sonawane, Medhansh Kapoor,
+              Vatsal Ashish Batra
+            </span>
+            <br />
+            <br class="iyna-ideathon-text47" />
+            <span class="iyna-ideathon-text48">PUBLIC HEALTH</span>
+            <br class="iyna-ideathon-text49" />
+            <br />
+            <span>1st:&nbsp;Teng Qiao Yun (Evelyn), Sanchana Sarethsena</span>
+            <br />
+            <br />
+            <span>2nd:&nbsp;Chissta Katebzadeh, Katherine Jeon, Zhilun Yu</span>
+            <br />
+            <br />
+            <span class="iyna-ideathon-text57">BASIC SCIENCE</span>
+            <br class="iyna-ideathon-text58" />
+            <br />
+            <span>1st:&nbsp;Andrew Mi, Steven Livingston, Yusuf Shabazz</span>
+            <br />
+            <br />
+            <span>2nd:&nbsp;Zaixin Jiang, Lara Hamze AnnieMarie Hoang</span>
+            <br />
+            <br />
+            <span class="iyna-ideathon-text66">LARGEST POTENTIAL IMPACT</span>
+            <br class="iyna-ideathon-text67" />
+            <br />
+            <span>Sumuga Swaminathan, Sebastian Crespo, Kristin Tsai</span>
+            <br />
+          </span>
+        </div>
+        <div>
+          <div class="iyna-ideathon-container06">
+            <style>
+              #image-container {
+                  width: 600px;
+                  height: 400px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: #fff;
+              }
+              #image-container img {
+                  max-width: 100%;
+                  max-height: 100%;
+                  display: none;
+              }
+            </style>
+
+            <div id="image-container">
+              <img src="image_1.jpg" alt="Image 1" class="slider-image" />
+              <img src="image_2.jpg" alt="Image 2" class="slider-image" />
+              <img src="image_3.jpg" alt="Image 3" class="slider-image" />
+              <img src="image_4.jpg" alt="Image 3" class="slider-image" />
+              <img src="image_5.jpg" alt="Image 3" class="slider-image" />
+              <img src="image_6.jpg" alt="Image 3" class="slider-image" />
+              <img src="image_7.jpg" alt="Image 3" class="slider-image" />
+              <img src="image_8.jpg" alt="Image 3" class="slider-image" />
+              <img src="image_9.jpg" alt="Image 3" class="slider-image" />
+              <img src="image_10.jpg" alt="Image 3" class="slider-image" />
+              <img src="image_11.jpg" alt="Image 3" class="slider-image" />
+              <img src="image_12.jpg" alt="Image 3" class="slider-image" />
+              <!-- Add more images as needed -->
+            </div>
+
+            <script>
+              // Get all images and initialize index
+              const images = document.querySelectorAll('.slider-image');
+              let currentIndex = 0;
+
+              // Function to show the current image
+              function showImage(index) {
+                  images.forEach((img, i) => {
+                      img.style.display = i === index ? 'block' : 'none';
+                  });
+              }
+
+              // Function to go to the next image
+              function nextImage() {
+                  currentIndex = (currentIndex + 1) % images.length;
+                  showImage(currentIndex);
+              }
+
+              // Show the first image initially
+              showImage(currentIndex);
+
+              // Set interval to change image every 3 seconds
+              setInterval(nextImage, 3000);
+            </script>
+          </div>
+        </div>
+        <div class="iyna-ideathon-container07">
+          <h1>
+            <br />
             <span>2023 Winners</span>
             <br />
           </h1>
           <img
             alt="image"
-            src="public/events_1-1500h.webp"
+            src="public/events_1-1500w.webp"
             class="iyna-ideathon-image1"
           />
-          <span class="iyna-ideathon-text38">
+          <span class="iyna-ideathon-text75">
             <br />
             <span>
               Andrew Mi, Yusuf Shabazz: If astrocytes are overloaded with tau
@@ -547,13 +655,13 @@
           </span>
         </div>
         <footer class="iyna-ideathon-footer">
-          <span class="iyna-ideathon-text54">
+          <span class="iyna-ideathon-text91">
             <br />
             <span>Our Partners</span>
           </span>
           <div class="iyna-ideathon-blog">
-            <div class="iyna-ideathon-container05">
-              <div class="iyna-ideathon-container06">
+            <div class="iyna-ideathon-container08">
+              <div class="iyna-ideathon-container09">
                 <div class="iyna-ideathon-blog-post-card">
                   <a
                     href="https://www.thebrainbee.org/"
@@ -570,7 +678,7 @@
                 </div>
               </div>
             </div>
-            <div class="iyna-ideathon-container07">
+            <div class="iyna-ideathon-container10">
               <div class="iyna-ideathon-blog-post-card1">
                 <a
                   href="https://www.alz.org/"
@@ -586,7 +694,7 @@
                 </a>
               </div>
             </div>
-            <div class="iyna-ideathon-container08">
+            <div class="iyna-ideathon-container11">
               <div class="iyna-ideathon-blog-post-card2">
                 <a
                   href="https://www.neuroethicssociety.org/"
@@ -604,8 +712,8 @@
             </div>
           </div>
           <div class="iyna-ideathon-separator"></div>
-          <div class="iyna-ideathon-container09">
-            <span class="iyna-ideathon-text57">
+          <div class="iyna-ideathon-container12">
+            <span class="iyna-ideathon-text94">
               © 2023 International Youth Neuroscience Association, All Rights
               Reserved.
             </span>
@@ -659,7 +767,7 @@
           </div>
         </footer>
         <div>
-          <div class="iyna-ideathon-container11">
+          <div class="iyna-ideathon-container14">
             <script
               async=""
               src="https://www.googletagmanager.com/gtag/js?id=G-V87GK324ZH"
