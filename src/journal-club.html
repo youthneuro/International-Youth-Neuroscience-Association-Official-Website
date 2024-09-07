@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Journal-Club - IYNA</title>
-    <meta property="og:title" content="Journal-Club - IYNA" />
+    <title>Journal - IYNA</title>
+    <title>Employee Gallery</title>
+    <meta property="og:title" content="Journal - IYNA" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -131,9 +134,9 @@
   <body>
     <link rel="stylesheet" href="./style.css" />
     <div>
-      <link href="./journal-club.css" rel="stylesheet" />
+      <link href="./journal.css" rel="stylesheet" />
 
-      <div class="journal-club-container">
+      <div class="journal-container">
         <header data-thq="thq-navbar" class="navbar-navbar-interactive">
           <img
             alt="logo"
@@ -340,6 +343,10 @@
                       </div>
                     </a>
                   </li>
+                  <li data-thq="thq-dropdown" class="navbar-dropdown9 list-item">
+                    <a href="social-media.html">
+                      <div data-thq="thq-dropdown-toggle" class="navbar-dropdown-toggle13">
+                        <span class="navbar-text13">Social Media</span>
                 </ul>
               </div>
               <a href="fundraising.html" class="navbar-navlink03">
@@ -391,141 +398,562 @@
             </div>
           </div>
         </header>
-        <div class="journal-club-container01">
-          <h1 class="journal-club-text13">
-            <span>IYNA Research Journal Club</span>
+        <div class="journal-container01">
+          <h1 class="journal-text13">
+            <span>IYNA Journal</span>
             <br />
           </h1>
         </div>
-        <div class="journal-club-container02">
-          <div class="journal-club-hero">
-            <div class="journal-club-container03">
-              <span class="journal-club-text16">
-                <span>
-                  The IYNA Research Journal Club is a club where members
-                  critically evaluate and discuss scientific articles and
-                  publications, with a focus on improving understanding of
-                  neuroscience-related studies. We aim to keep members informed
-                  about the latest research, encourage critical thinking, foster
-                  collaboration, and enhance skills in reading and presenting
-                  scientific literature. Our Research Journal Club will meet
-                  once a month where we will be discussing a
-                  Neuroscience-related topic within the scope of a Current
-                  Researcher's field or research paper. By joining our research
-                  club you will have the opportunity to present a research paper
-                  and have a researcher answers questions with regards to their
-                  research afterwards to a large audience. Our once-per-month
-                  virtual meetings offer you an opportunity to read and discuss
-                  scientific literature and newsworthy developments in the field
-                  of neuroscience in a low-pressure environment, with expert
-                  scientists from the field of Neuroscience. There are no
-                  coursework prerequisites for participation, just a curiosity
-                  for science and a desire to learn how to understand scientific
-                  literature! After filling out this form, you will receive a
-                  follow-up email, within a couple of weeks, with more detailed
-                  information regarding the journal club and the specific dates
-                  and times of our meetings.
+        <div class="journal-container02">
+          <div class="journal-hero">
+            <div class="journal-container03">
+              <h1 class="journal-text16">IYNA Journal</h1>
+              <div class="journal-container04">
+                <span class="journal-text17">
+                  <span>
+                    Check out the August 2023 issue! The IYNA Journal gives
+                    young neuroscience enthusiasts the opportunity to take a
+                    deep dive into a neuroscience topic and publish their
+                    findings. To find out more about how to submit an article to
+                    our journal, click the button blow.
+                  </span>
+                  <span class="journal-text19">
+                    Note: the IYNA journal is not a peer reviewed journal and
+                    should not be represented or treated as such.
+                  </span>
+                  <br />
                 </span>
-                <span>
-                  <span></span>
-                  <span></span>
-                </span>
-                <span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </span>
-              <div class="journal-club-btn-group">
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdfAHS7Dl5RUxI736_mXfaLuBPmQ71ss7yTAISiesXU2gZP1w/viewform?usp=sf_link"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="journal-club-link button"
-                >
-                  Interest Form
-                </a>
+                <div class="journal-btn-group">
+                  <a href="submissions.html" class="journal-navlink25 button">
+                    Submissions
+                  </a>
+                  <a href="published.html" class="journal-navlink26 button">
+                    Published Issues
+                  </a>
+                </div>
               </div>
             </div>
-            <img
-              alt="image"
-              src="public/external/journalclub-1500h-1200w.png"
-              class="journal-club-image1"
-            />
+            <div class="journal-container05">
+              <div class="journal-container06">
+                <div class="journal-container07">
+                  <div class="journal-container08">
+                    <style>
+                      .mySlides {display:none;}
+                    </style>
+
+                    <div class="mySlides">
+                      <img
+                        src="MARCH_ISSUE-1.png"
+                        style="width:100%"
+                      />
+                    </div>
+
+                    <div class="mySlides">
+                      <img
+                        src="MAY_ISSUE-1.png"
+                        style="width:100%"
+                      />
+                    </div>
+
+                    <div class="mySlides">
+                      <img
+                        src="FEB_ISSUE-1.png"
+                        style="width:100%"
+                      />
+                    </div>
+
+                    <script>
+                      var slideIndex = 0;
+                      carousel();
+
+                      function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName('mySlides');
+                        for (i = 0; i < x.length; i++) {
+                          x[i].style.display = 'none';
+                        }
+                        slideIndex++;
+                        if (slideIndex > x.length) {slideIndex = 1}
+                        x[slideIndex-1].style.display = 'block';
+                        setTimeout(carousel, 2000); // Change image every 2 seconds
+                      }
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <footer class="journal-club-footer">
-          <span class="journal-club-text24">
+        <div class="journal-container09">
+          <h1 class="journal-text21">
+            <br />
+            <span>Volunteers Behind the Scene</span>
+            <br />
+            <br />
+          </h1>
+        </div>
+        <div class="journal-container10">
+          <div class="journal-container11">
+            <style>
+              body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f2f2f2;
+              }
+
+              .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-top: 5px;
+              }
+
+              .card {
+                perspective: 1000px;
+                width: calc(25% - 10px); /* Adjust as needed */
+                height: 200px; /* Adjust as needed */
+                position: relative;
+                margin: 5px;
+              }
+
+              .card-inner {
+                width: 100%;
+                height: 100%;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+              }
+
+
+              .card-front,
+              .card-back {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                backface-visibility: hidden;
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+              }
+
+              .card-back {
+                transform: rotateY(180deg);
+                font-size: 1em; /* Regular font size */
+                transition: font-size 0.5s; /* Transition for font size */
+              }
+
+              .card:hover .card-back {
+                font-size: 0.6em; /* Adjusted font size on hover */
+              }
+
+              .card h2 {
+                color: #333333;
+                font-size: 1.5em;
+                margin-bottom: 10px;
+              }
+
+              .card p {
+                color: #666666;
+                font-size: 1em;
+                margin-bottom: 10px;
+                line-height: 1.4;
+              }
+
+              /* Media queries for responsiveness */
+              @media screen and (max-width: 1024px) {
+                .card {
+                  width: calc(50% - 10px); /* Adjust width for smaller screens */
+                }
+              }
+
+              @media screen and (max-width: 768px) {
+                .card {
+                  width: calc(100% - 10px); /* Adjust width for mobile screens */
+                }
+              }
+            </style>
+
+            <div class="container">
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Ananyaa Karthikeyan</h2>
+                    <p>Head of Events</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Riyaa Sri Ramanathan</h2>
+                    <p>Junior Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Annie Pan</h2>
+                    <p>Editor-in-Chief</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Ashley Jing</h2>
+                    <p>Junior Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Ashra Roshy</h2>
+                    <p>Journalist</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Ashvin Kumar</h2>
+                    <p>Managing Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Brianna Silva</h2>
+                    <p>Translator</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Divyash Shah</h2>
+                    <p>Senior Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Ellen Seo</h2>
+                    <p>Journalist</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Gayeong Kim</h2>
+                    <p>Junior Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Haris Rana</h2>
+                    <p>Head of Assembly</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Irene Zhang</h2>
+                    <p>Senior Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Eesha Oza</h2>
+                    <p>Senior Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Katherine Carpio</h2>
+                    <p>Journalist</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Ambalika Basak</h2>
+                    <p>Journalist</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Aleksandra Dubno</h2>
+                    <p>Head of Recruitment</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Mary Zhang</h2>
+                    <p>Junior Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Shrika Vejandla</h2>
+                    <p>Operations Lead/Head of Journalists</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Vaishnavi Kode</h2>
+                    <p>Senior Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Vibha Yadav Ganji</h2>
+                    <p>Junior Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Xinxin Zhu</h2>
+                    <p>Junior Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Youlan Li</h2>
+                    <p>Junior Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Sebastian Castro</h2>
+                    <p>Translator</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>María Fernanda Montiel Quiñones</h2>
+                    <p>Translator</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Purva Sareen</h2>
+                    <p>Translator</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Ipshita Adarsh</h2>
+                    <p>Translator</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Sarthak Kamalkishor Dhole</h2>
+                    <p>Translator</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Namish Balakerthy Punyakoti</h2>
+                    <p>Translator</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Erin Yoo</h2>
+                    <p>Junior Editor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Alex Kim</h2>
+                    <p>Journalist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="journal-footer">
+          <span class="journal-text26">
             <br />
             <span>Our Partners</span>
           </span>
-          <div class="journal-club-blog">
-            <div class="journal-club-container04">
-              <div class="journal-club-container05">
-                <div class="journal-club-blog-post-card">
+          <div class="journal-blog">
+            <div class="journal-container12">
+              <div class="journal-container13">
+                <div class="journal-blog-post-card">
                   <a
                     href="https://www.thebrainbee.org/"
                     target="_blank"
                     rel="noreferrer noopener"
-                    class="journal-club-link1"
+                    class="journal-link"
                   >
                     <img
                       alt="image"
                       src="https://www.fens.org/wp-content/uploads/2021/06/IBB-300x160.png"
-                      class="journal-club-image2"
+                      class="journal-image1"
                     />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="journal-club-container06">
-              <div class="journal-club-blog-post-card1">
+            <div class="journal-container14">
+              <div class="journal-blog-post-card1">
                 <a
                   href="https://www.alz.org/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="journal-club-link2"
+                  class="journal-link1"
                 >
                   <img
                     alt="image"
                     src="https://www.alz.org/media/HomeOffice/Inline%20Image/stacked-thumb-new.png"
-                    class="journal-club-image3"
+                    class="journal-image2"
                   />
                 </a>
               </div>
             </div>
-            <div class="journal-club-container07">
-              <div class="journal-club-blog-post-card2">
+            <div class="journal-container15">
+              <div class="journal-blog-post-card2">
                 <a
                   href="https://www.neuroethicssociety.org/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="journal-club-link3"
+                  class="journal-link2"
                 >
                   <img
                     alt="image"
                     src="https://ns.memberclicks.net/assets/site/ins-logo.png"
-                    class="journal-club-image4"
+                    class="journal-image3"
                   />
                 </a>
               </div>
             </div>
           </div>
-          <div class="journal-club-separator"></div>
-          <div class="journal-club-container08">
-            <span class="journal-club-text27">
+          <div class="journal-separator"></div>
+          <div class="journal-container16">
+            <span class="journal-text29">
               © 2024 International Youth Neuroscience Association, All Rights
               Reserved.
             </span>
-            <div class="journal-club-icon-group">
+            <div class="journal-icon-group">
               <a
                 href="https://twitter.com/iyna_official/status/1358998455289544704"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="journal-club-link4"
+                class="journal-link3"
               >
                 <svg
                   viewBox="0 0 950.8571428571428 1024"
-                  class="journal-club-icon10"
+                  class="journal-icon10"
                 >
                   <path
                     d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
@@ -536,11 +964,11 @@
                 href="https://www.instagram.com/iyna_official/"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="journal-club-link5"
+                class="journal-link4"
               >
                 <svg
                   viewBox="0 0 877.7142857142857 1024"
-                  class="journal-club-icon12"
+                  class="journal-icon12"
                 >
                   <path
                     d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
@@ -551,11 +979,11 @@
                 href="https://www.facebook.com/youthneuro/"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="journal-club-link6"
+                class="journal-link5"
               >
                 <svg
                   viewBox="0 0 602.2582857142856 1024"
-                  class="journal-club-icon14"
+                  class="journal-icon14"
                 >
                   <path
                     d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
@@ -566,7 +994,7 @@
           </div>
         </footer>
         <div>
-          <div class="journal-club-container10">
+          <div class="journal-container18">
             <script
               async=""
               src="https://www.googletagmanager.com/gtag/js?id=G-V87GK324ZH"
