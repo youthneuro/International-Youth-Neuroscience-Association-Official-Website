@@ -8,6 +8,44 @@
     <meta property="twitter:card" content="summary_large_image" />
 
     <style data-tag="reset-style-sheet">
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .panel {
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 15px 0;
+            padding: 20px;
+            width: 80%;
+            display: flex;
+            align-items: flex-start;
+        }
+        .panel img {
+            max-width: 150px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .panel-content {
+            flex: 1;
+        }
+        .panel-content h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .panel-content p {
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+        .focus-area {
+            font-weight: bold;
+            color: #555;
+        }
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
     </style>
     <style data-tag="default-style-sheet">
@@ -498,7 +536,101 @@
               />
             </div>
           </div>
-        </div>        
+        </div>
+        <div class="container">
+
+          <!-- Dr. Marta -->
+          <div class="panel">
+              <img src="path/to/marta.jpg" alt="Dr. Marta">
+              <div class="panel-content">
+                  <h3>Dr. Marta Casquero-Veiga</h3>
+                  <p class="focus-area">Focus: Cell Biology</p>
+                  <p>Marta obtained her Bachelor’s Degree in Biology in 2014 from Universidad Complutense de Madrid (UCM) and her Master’s Degree in Biochemistry, Molecular Biology and Biomedicine in 2015. In 2021, she received her PhD in Biomedical Research. Her research focuses on neuroimaging biomarkers for neuropsychiatric disorders and Alzheimer's Disease.</p>
+              </div>
+          </div>
+  
+          <!-- Dr. Sotiria Moza -->
+          <div class="panel">
+              <img src="sotiria moza_2022.jpg" alt="Dr. Sotiria Moza">
+              <div class="panel-content">
+                  <h3>Dr. Sotiria Moza</h3>
+                  <p class="focus-area">Focus: Neuropsychology</p>
+                  <p>Sotiria holds a Bachelor’s in Psychology and is a PhD candidate at Aristotle University of Thessaloniki. She is the scientific coordinator of Noesis Cognitive Center & Tech Solutions, with expertise in neuropsychological assessment and assistive technology. She has published extensively and serves in numerous research and professional roles.</p>
+              </div>
+          </div>
+  
+          <!-- Dr. Ian Stevens -->
+          <div class="panel">
+              <img src="public\2024_30_HastingsCenter_0744.JPG" alt="Dr. Ian Stevens">
+              <div class="panel-content">
+                  <h3>Dr. Ian Stevens</h3>
+                  <p class="focus-area">Focus: Neurological and Neuropsychiatric Disorders</p>
+                  <p>Ian is a Project Manager & Research Assistant at The Hastings Center, with a background in philosophy and bioethics. He has published extensively on ethical dilemmas in neurotechnology and plans to begin medical school in 2025.</p>
+              </div>
+          </div>
+  
+          <!-- Dr. Manas Ranjan Sahu -->
+          <div class="panel">
+              <img src="path/to/manas.jpg" alt="Dr. Manas Ranjan Sahu">
+              <div class="panel-content">
+                  <h3>Dr. Manas Ranjan Sahu</h3>
+                  <p class="focus-area">Focus: Neuronal Communication</p>
+                  <p>Dr. Sahu’s research on the Hippo signaling pathway in Alzheimer's disease has contributed significantly to understanding neurodegeneration. He has published extensively in top-tier journals and received numerous academic honors.</p>
+              </div>
+          </div>
+  
+          <!-- Dr. Elizabeth Engler-Chiurazzi -->
+          <div class="panel">
+              <img src="path/to/elizabeth.jpg" alt="Dr. Elizabeth Engler-Chiurazzi">
+              <div class="panel-content">
+                  <h3>Dr. Elizabeth Engler-Chiurazzi</h3>
+                  <p class="focus-area">Focus: Neuronal Communication</p>
+                  <p>Dr. Engler-Chiurazzi is a behavioral neuroscientist at Tulane University. Her NIH-funded research explores the intersection of the nervous and immune systems in brain aging, injury, and disease. She has a strong track record in public outreach and neuroscience education.</p>
+              </div>
+          </div>
+  
+          <!-- Dr. Lauren Bojarski -->
+          <div class="panel">
+              <img src="path/to/lauren.jpg" alt="Dr. Lauren Bojarski">
+              <div class="panel-content">
+                  <h3>Dr. Lauren Bojarski</h3>
+                  <p class="focus-area">Focus: Patient Diagnosis</p>
+                  <p>Dr. Bojarski is a neurodegenerative fellow and board-certified neurologist at the University of Kentucky. Her research focuses on advocacy, education, and dispelling neurophobia through innovative methods.</p>
+              </div>
+          </div>
+  
+          <!-- Mr. Mark Piasecki -->
+          <div class="panel">
+              <img src="path/to/mark.jpg" alt="Mr. Mark Piasecki">
+              <div class="panel-content">
+                  <h3>Mr. Mark Piasecki</h3>
+                  <p class="focus-area">Focus: Motor Systems</p>
+                  <p>Mark is a second-year student at the University of Manitoba with a passion for neuroscience, having placed 5th in the International Brain Bee in 2023. His current research focuses on a rare monogenetic neurodevelopmental disorder.</p>
+              </div>
+          </div>
+  
+          <!-- Prof. Bindu Menon -->
+          <div class="panel">
+              <img src="public\Screenshot 2025-01-07 192244.png" alt="Prof. Bindu Menon">
+              <div class="panel-content">
+                  <h3>Prof. Bindu Menon</h3>
+                  <p class="focus-area">Focus: Neurology and Public Health</p>
+                  <p>Prof. Menon has over 100 publications and numerous awards, including the Mridha Spirit of Neurology award. She pioneered "Neurology on Wheels" and developed several health apps to aid patients with neurological disorders.</p>
+              </div>
+          </div>
+  
+          <!-- Dr. Vasudha Anil -->
+          <div class="panel">
+              <img src="public\external\Screenshot 2025-01-07 192549.png" alt="Dr. Vasudha Anil">
+              <div class="panel-content">
+                  <h3>Dr. Vasudha Anil</h3>
+                  <p class="focus-area">Focus: Anatomy Dissection Training</p>
+                  <p>Dr. Anil specializes in anatomical education and is recognized for her contributions to medical training and dissections. She leads workshops to enhance hands-on skills in anatomical studies.</p>
+              </div>
+          </div>
+  
+      </div>
+  
         <footer class="summer-program-footer">
           <span class="summer-program-text166">
             <br />
